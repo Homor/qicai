@@ -1,0 +1,30 @@
+/*筛选*/
+	/*.container{height:1100px;}*/
+	.screen{margin-top:50px;}
+	.screen div[class^=screen_item] td{width:100px;height:30px;}
+	.screen div[class^=screen_item] td:nth-child(1){text-align:right;width:170px;}
+	.screen .selected {background-color:#5970DA;color:white;border-radius:5px;}
+	.screen div[class^=screen_item] td:nth-child(1) span{display:inline-block;width:45px;}
+	.screen div[class^=screen_item]{margin-top:10px;}
+	.screen a{color:gray;padding:0px 3px;}
+	.search_result a{color:red;}
+	.screen .screen_item2, .screen .screen_item3{border-bottom:1px dotted gray;}
+	.search_result tr:nth-child(1) td:nth-child(1) span{display:inline-block;width:150px;}
+	.screen .screen_item1{width:100%;height:50px;background-color:#F6F6F6;line-height:50px;}
+	.screen .screen_item1 li {float:left;font-size:18px;font-weight:500;font-family:"方正黑体简体";margin-left:20px;}
+	
+	.search_result td{border-bottom:1px dotted gray;width:162px;padding:10px 0px;height:80px;}
+	.search_result td div{float:left;height:100%;margin-right:20px; }
+	.search_result td span{margin-top:10px;display:inline-block;}
+	.search_result td:nth-child(1){width:500px;}
+	.search_result tr:nth-child(1) td{height:60px;background-color:#F6F6F6;border-style:none;}
+/*筛选*/	
+	
+/*分页*/
+	.tcdPageCode{margin-top:60px;text-align:center;width:100%;float:left;}
+	.tcdPageCode a{display:inline-block;width:30px;height:30px;border:1px solid gray;margin-left:3px;border-radius:5px;color:gray;line-height:30px;}
+	.tcdPageCode .disabled{padding:5px 10px;border:1px solid gray;margin-left:3px;border-radius:5px;color:gray;}
+	.current{background-color:red;color:white;padding:5px 10px;border:1px solid gray;margin-left:3px;border-radius:5px;}
+	.tcdPageCode .nextPage{padding:5px 10px;width:auto;line-height:20px;}
+	.tcdPageCode .prevPage{padding:5px 10px;width:auto;line-height:20px;}
+/*分页*/	

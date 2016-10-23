@@ -1,0 +1,323 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no" />
+<title>创业者详情</title>
+<script type="text/javascript" src="jquery/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/sign_in_after.css" />
+
+<style type="text/css">
+    body{background-color:#ECECEC;}
+    .more_info_left{background-color:white;margin:50px 0px;float:left;width:800px;}
+    .more_info_right{float:right;background-color:white;width:310px;margin:50px 0px;}
+    .more_info_right td{padding:5px 10px;}
+    .more_info_right table{margin:auto;}
+    .more_info_right table h3{color:black;}
+    .more_info_right td:nth-child(1){color:#ccc;}
+    .more_info_right td:nth-child(2){text-align:right;}
+    .basic_info{background-color:white;padding:20px 20px;border-radius:10px;height:140px;}
+    .basic_info .basic_info_word{float:left;width:550px;}
+    .basic_info .badge{background-color:#FFBF13;}
+    .basic_info li{margin-top:10px;}
+    .basic_info .basic_info_btn{float:right;line-height:100px;height:100px;}
+    .basic_info .basic_info_btn button{width:120px;margin-left:20px;}
+    .basic_info .btn-primary{background-color:#D83800;border-color:#D83800;}
+    .basic_info .btn-primary:hover{background-color:#D83800;border-color:#D83800;}
+    
+    .finan_company_info{margin:30px 20px;width:760px;padding:20px 20px;}
+    .finan_company_info:hover{background-color:#EEE;}
+    .company_basic_info{margin-top:20px;}
+    .company_basic_info .with_border{border-left:solid 2px #BBB;display:inline-block;height:30px;padding-left:10px;position:relative;}
+    .company_basic_info .with_border .cycle_td{width:10px;height:10px;border-radius:5px;background-color:#BBB;position:absolute;top:0px;left:-6px;}
+    .more_info_left_company{height:50px;border-bottom:solid 1px #DDD;margin-bottom:20px;padding:0px 20px;}
+    .more_info_left_company h3{line-height:50px;}
+</style>
+</head>
+
+<body>
+<!-- -- -- 头部-- -- -->
+<div class="nav_head">
+  
+  <div class="warp">
+      <div class="logo">
+          <a href="index.html"><h1>奇彩创投</h1></a>
+      </div>
+      <div class="container_head">
+          <div class="nav_list_word1" >
+              <ul> 
+                  <li><a href="build_team.html">组建团队</a></li>
+                  <li><a href="find_investor.html">找投资人</a></li>
+                  <li><a href="find_entrepreneurial_teacher.html">创业指导</a></li>
+                   <li><a href="products_crowd_funding_play.html">产品众筹</a></li>
+                  <li><a href="stock_right_financing_display.html">股权众筹</a></li>
+              </ul>
+          </div> 
+
+          <div class="nav_list_word2">
+              <ul>
+                  <li><a href="certification.html">我的认证</a></li>
+                  <li><a href="stock_right_crowd_funding.html">股权融资</a></li>
+                </ul>
+           </div>    
+      </div>
+      
+      <ul class="nav_li">
+             <li><a href="index.html">首页</a></li>
+            <li id="show_list1"><a href="#">创业者</a></li>
+            <li id="show_list2"><a href="#">投资人</a></li>
+           <!--  <li><a href="entrepreneurship_school.html">创业学院</a></li> -->
+            <li><a href="active_community.html">活动社区</a></li>
+            <li><a href="information.html">信息资讯</a></li>
+      </ul>
+       <div class=nvr>
+             <div class="login ">
+              <div class="mypg">
+                <a href="#" id="show_list3" class="mypga">我的账户</a>
+                <div class="nav_list_word3">
+                  <ul>
+                    <li><a href="my_page.html">我的主页</a></li>
+                    <li><a href="account_setting.html">账号设置</a></li>
+                    <li><a href="register_success.html">身份认证</a></li>
+                    <li><a href="index.html">退出</a></li>
+                  </ul>
+                </div>
+              </div>
+              <img src="images/chuangye01.jpg">
+             </div>
+      </div>
+    </div>
+</div>
+<!-- -- -- 头部结束-- -- -->
+
+
+<div class="container">
+    <div class="basic_info">
+        <div class="basic_info_word">
+            <div class="media">
+                <span class="pull-left" style="width:100px;height:100px;"><img class="media-object img-responsive img-rounded"  src="images/mayun.jpg"></span>
+                <div class="media-body">
+                    <h4 class="media-heading">马云</h4>
+                    <ul>
+                      <li>阿里巴巴总裁，关注电商、计算机、金融领域</li>
+                      <li><span class="glyphicon glyphicon-tag"></span>&nbsp;阿里巴巴 支付宝 阿里云</li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+        <div class="basic_info_btn">
+            <button class="btn btn-primary">关注</button>
+        </div> 
+    </div>
+    <div class="more_info_per">
+        <div class="more_info_left">
+        
+            <div class="more_info_left_company">
+                <h3>创业经历&nbsp;<span class="badge" style="background-color:#D83800;">3</span></h3>
+            </div>
+            <div class="finan_company_info">
+                <div class="media">
+                    <span class="pull-left"><img class="media-object img-responsive img-rounded" src="images/alibaba.jpg" /></span>
+                    <div class="media-body">
+                        <h4 class="media-heading">阿里巴巴</h4>
+                        <p>业务和关联公司的业务包括：淘宝网、天猫、聚划算、全球速卖通、阿里巴巴国际交易市场、1688、阿里妈妈、阿里云、蚂蚁金服、菜鸟网络等.2014年9月19日，阿里巴巴集团在纽约证券交易所正式挂牌上市，股票代码“BABA”，创始人和董事局主席为马云。2015年全年，阿里巴巴总营收943.84亿元人民币，净利润688.44亿元人民币。</p>
+                    </div>
+                </div>
+                <div class="company_basic_info">
+                    <create_time style="margin-right:10px;">2014.09</create_time>
+                    <span class="with_border">A轮<span class="cycle_td"></span></span>
+                    <span>|&nbsp;总投资金额&nbsp;1000亿&nbsp;</span>
+                </div>
+            </div>
+
+            <div class="finan_company_info">
+                <div class="media">
+                    <span class="pull-left"><img class="media-object img-responsive img-rounded" src="images/alibaba.jpg" /></span>
+                    <div class="media-body">
+                        <h4 class="media-heading">阿里巴巴</h4>
+                        <p>业务和关联公司的业务包括：淘宝网、天猫、聚划算、全球速卖通、阿里巴巴国际交易市场、1688、阿里妈妈、阿里云、蚂蚁金服、菜鸟网络等.2014年9月19日，阿里巴巴集团在纽约证券交易所正式挂牌上市，股票代码“BABA”，创始人和董事局主席为马云。2015年全年，阿里巴巴总营收943.84亿元人民币，净利润688.44亿元人民币。</p>
+                    </div>
+                </div>
+                <div class="company_basic_info">
+                    <create_time style="margin-right:10px;">2014.09</create_time>
+                    <span class="with_border">A轮<span class="cycle_td"></span></span>
+                    <span>|&nbsp;总投资金额&nbsp;1000亿&nbsp;</span>
+                </div>
+            </div>
+
+            <div class="finan_company_info">
+                <div class="media">
+                    <span class="pull-left"><img class="media-object img-responsive img-rounded" src="images/alibaba.jpg" /></span>
+                    <div class="media-body">
+                        <h4 class="media-heading">阿里巴巴</h4>
+                        <p>业务和关联公司的业务包括：淘宝网、天猫、聚划算、全球速卖通、阿里巴巴国际交易市场、1688、阿里妈妈、阿里云、蚂蚁金服、菜鸟网络等.2014年9月19日，阿里巴巴集团在纽约证券交易所正式挂牌上市，股票代码“BABA”，创始人和董事局主席为马云。2015年全年，阿里巴巴总营收943.84亿元人民币，净利润688.44亿元人民币。</p>
+                    </div>
+                </div>
+                <div class="company_basic_info">
+                    <create_time style="margin-right:10px;">2014.09</create_time>
+                    <span class="with_border">A轮<span class="cycle_td"></span></span>
+                    <span>|&nbsp;总投资金额&nbsp;1000亿&nbsp;</span>
+                </div>
+            </div>
+                
+        </div>
+            
+            
+        <div class="more_info_right">
+            <table>
+                <tr>
+                    <td><h3>重要信息</h3></td>
+                    <td> &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp </td>
+                </tr>
+                <tr>
+                    <td>单笔可投</td>
+                    <td>
+                         $500万-5000万(基金)<br />
+                        3000万-30000万(基金) 
+                    </td>
+                </tr>
+                <tr>
+                    <td>投资阶段</td>
+                    <td>A轮</td> 
+                </tr>   
+            </table>
+        </div>       
+    </div>
+</div>
+
+<div class="footer">
+
+  <div class="foot-content">
+             <ul class="foot-l">
+             
+                 <li> <span>关于奇彩创投 | 加入我们 | 联系我们 </span><br />意见反馈：<span>www.yeamolo@163.com</span><br />客服电话：<span>1835699061</span>    <br/>
+                 <span>  服务条款 隐私政策</span>  
+                 </li>
+             </ul>
+             
+             <div class="foot-c">
+                 <table>
+                   <td class="huoban">友情链接 </td>
+                 </table>
+                <table>
+                  <tr>
+                     <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                     </tr>
+                    <tr>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   </tr>
+                    <tr>
+                   <td>  <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                 </tr>
+                </table>
+             </div>
+             
+             <div class="foot-r">
+              <div class="saoma">
+               扫码关注微信公众平台
+               </div>
+              </div>
+           </div>
+    <div class="footer-dibu">
+        <span class="bianhao">
+       Copyright © 1968-2016 奇彩创投有限公司 粤ICP备09215446号安备号
+        </span>
+    </div>
+</div>
+<!-- -- --底部结束-- -- -->
+
+</body>
+<script type="text/javascript">
+        $("#show_list1").hover(function(){
+          
+          $(".nav_list_word1").show();
+          },function(){
+              $(".nav_list_word1").hide();
+            })
+        
+        $(".nav_list_word1").hover(function(){
+          
+          $(".nav_list_word1").show();
+          },function(){
+              $(".nav_list_word1").hide();
+            })
+    $("#show_list2").hover(function(){
+          
+          $(".nav_list_word2").show();
+          },function(){
+              $(".nav_list_word2").hide();
+            })
+        
+        $(".nav_list_word2").hover(function(){
+          
+          $(".nav_list_word2").show();
+          },function(){
+              $(".nav_list_word2").hide();
+            })
+ $("#show_list3").hover(function(){
+    
+    $(".nav_list_word3").show();
+    },function(){
+        $(".nav_list_word3").hide();
+      })
+  
+  $(".nav_list_word3").hover(function(){
+    
+    $(".nav_list_word3").show();
+    },function(){
+        $(".nav_list_word3").hide();
+      })
+
+    function jump_to(obj){
+        window.location="product_crowd_funding_details.html"
+      }
+
+            
+    function jump_page_online_finan(){
+      window.location="online_financing.html"
+      }       
+    
+</script>
+
+</html>
+
+
+
+
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                              
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,551 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>融资项目</title>
+<script type="text/javascript" src="jquery/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/temp.css" />
+<style type="text/css">
+/*顶部公司简介*/
+
+	.top_company{height:200px;width:100%;background-color:#27314F;padding:0px 50px;}
+	.container .company_logo {float:left;margin:25px 0px 0px 0px;}
+	.container .company_logo span:nth-child(1){background:url(images/alibaba.jpg);display:inline-block;border-radius:10px;width:150px;height:150px;overflow: hidden}
+	.container .company_logo span{margin:10px 20px;;display:inline-block;}
+	.container .company_intro{float:left;}
+	.container .company_intro ul{margin-top:32px;}
+	.container .company_intro li{color:white;margin-top:20px;}
+	.container .company_intro li:nth-child(1){font-size:20px;}
+	.container .company_intro li:nth-child(1) span{display:inline-block;margin-left:5px;}
+	.container .company_intro li:nth-child(2){font-size:16px;}
+	.container .company_intro li:nth-child(3) span{display:inline-block;padding:0px 5px;border:1px white solid}
+	.container .company_intro li:nth-child(4) span{margin-left:5px;}
+	.container .company_info{float:right;color:white;margin:60px 0px 0px 0px;height:100px;width:200px;font-size:18px;text-align:center;line-height:100px;}
+	.container .company_info .pro_buy{height:100px;width:200px;border:2px solid white;background-color:#27314F;}
+	.container .company_info button{width:150px;height:50px;}
+	.container .company_info td{padding:10px 10px;}
+	.container .only_investor{border-bottom:2px solid gray;height:50px;}
+	.container .only_investor span:nth-child(1){display:inline-block;line-height:50px;}
+	.container .only_investor button:nth-child(2){width:150px;height:40px;margin:-5px 0px 0px 259px;}
+	.container .only_investor button:nth-child(3){width:150px;height:40px;margin:-5px 0px 0px 20px;}
+	
+	
+/*顶部公司简介*/
+
+
+	
+/*公司介绍开始*/
+	.container .company_intro_word{padding:50px 0px;}
+	.container .company_intro_word h2{text-align:center;margin-bottom:30px;}
+	.container .company_intro_word h5{font-weight:bold;margin-bottom:10px;}
+	.container .company_intro_word td{padding:20px 0px;}
+	.container .company_intro_word td:nth-child(2), .container .company_intro_word td:nth-child(4), .container .company_intro_word td:nth-child(6){width:28%;height:auto;}
+	.container .company_intro_word td:nth-child(1), .container .company_intro_word td:nth-child(3), .container .company_intro_word td:nth-child(5){text-align:right;padding-right:10px;}
+	.container .company_intro_word td:nth-child(1) span, .container .company_intro_word td:nth-child(3) span, .container .company_intro_word td:nth-child(5) span{color:#5D86F3;font-size:30px;display:inline-block;}
+	.container .company_btm{float:left;color:white;width:100%;padding:0px 100px;margin-top:20px;}
+	.container .company_btm .company_btm1 span:nth-child(2){float:right;}
+	.container .company_btm .company_btm1 button{width:80px;}
+	.container .company_btm .company_btm2{width:100%;background-color:white;height:10px;border:2px solid #337AB7;margin-top:10px;}
+	.container .company_btm .company_btm2 div{width:50%;height:8px;background: linear-gradient(to right,#337AB7,#27314F);}
+/*公司介绍结束*/	
+	
+/*图片轮播开始*/
+*{ padding:0; margin:0; list-style:none; border:0;}
+.all{
+  width:500px;
+  height:200px;
+ /* padding:7px;*/
+ margin:50px;
+  border:1px solid #ccc;
+  position:relative;
+  float:left;
+}
+.screen{
+    width:500px;
+    height:200px;
+     overflow:hidden; 
+    position:relative;
+}
+
+.screen li{ width:500px; height:200px; overflow:hidden; float:left;}
+.screen ul{ position:absolute; left:0; top:0px; width:3000px;}
+.all ol{ position:absolute; right:10px; bottom:10px; line-height:20px; text-align:center;}
+.all ol li{ float:left; width:20px; height:20px; background:#fff; border:1px solid #ccc; margin-left:10px; cursor:pointer;}
+.all ol li.current{ background:yellow;}
+
+/*图片轮播结束*/
+
+	.container .time_zone{margin-left:30px;margin-top:-30px;float:left;width:34%;position:relative;}
+	.container .time_zone table{margin-left:45px;}
+	.container .time_zone td{padding:10px 0px;}
+	.container .time_zone td li{color:#397CF5;}
+	.container .time_zone td li span{color:black;font-weight:bold;}
+	.container .time_zone td:nth-child(1){position:relative;width:100px;border-left:solid 2px gray;}
+	.container .time_zone .year{position:absolute;display:inline-block;top:44px;left:27px;padding:0px 3px;background-color:#397CF5;color:white;}
+	.container .time_zone td div{position:absolute;top:36%;left:-7px;height:13px;background-color:#F4F4F4;line-height:10px;}
+	.container .time_zone td div span:nth-child(1){color:#397CF5;margin-right:10px;}
+	.container .time_zone td div span:nth-child(2){color:gray;}
+	.container .time_zone .time_nav{margin-bottom:40px;}
+	.container .time_zone .time_nav span:nth-child(1){padding:0px 10px;font-weight:bold;font-size:17px;}
+	.container .time_zone .time_nav span:nth-child(2){padding:0px 10px;border:solid 1px #397CF5;display:inline-block;float:right;color:#397CF5}
+
+	/*创始团队开始*/
+	.container .origi_team{width:80%;margin:auto;padding:30px 100px;}
+	.container .origi_team h2{margin:20px auto;margin-bottom:20px;}
+	.container .origi_team li{margin-top:10px;}
+	.container .origi_team ul{margin-bottom:30px;}
+	
+	
+	/*创始团队结束*/
+    .btn-primary a{color:#fff;}
+
+</style>
+</head>
+
+<body>
+<!-- -- -- 头部-- -- -->
+<div class="nav_head">
+  
+  <div class="warp">
+      <div class="logo">
+          <a href="index.html"><h1>奇彩创投</h1></a>
+      </div>
+      <div class="container_head">
+          <div class="nav_list_word1" >
+              <ul> 
+                  <li><a href="build_team.html">组建团队</a></li>
+                  <li><a href="find_investor.html">找投资人</a></li>
+                  <li><a href="find_entrepreneurial_teacher.html">创业指导</a></li>
+                   <li><a href="products_crowd_funding_play.html">产品众筹</a></li>
+                  <li><a href="stock_right_financing_display.html">股权众筹</a></li>
+              </ul>
+          </div> 
+
+          <div class="nav_list_word2">
+              <ul>
+                  <li><a href="certification.html">我的认证</a></li>
+                  <li><a href="stock_right_crowd_funding.html">股权融资</a></li>
+                </ul>
+           </div>    
+      </div>
+      
+      <ul class="nav_li">
+             <li><a href="index.html">首页</a></li>
+            <li id="show_list1"><a href="#">创业者</a></li>
+            <li id="show_list2"><a href="#">投资人</a></li>
+            <li><a href="active_community.html">活动社区</a></li>
+            <li><a href="information.html">信息资讯</a></li>
+      </ul>
+      <div class=nvr>
+        <div class="login">
+          <a href="sign_in.html">登录</a>
+          <a href="register.html">注册</a>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- -- -- 头部结束-- -- -->
+
+
+<!--顶部公司简介-->
+	<div class="container">
+    	<div class="top_company">
+    	<div class="company_logo">
+        	<span></span><br />
+        </div>
+        <div class="company_intro">
+        	<ul>
+            	<li>
+                	<span>阿里巴巴网络技术有限公司</span>
+                    <span>1999年</span>
+                </li>
+                <li>电子商务、网上支付、B2B网上交易市场及云计算业务</li>
+                <li>
+                	<span>电子商务</span>
+                    <span>网上支付</span>
+                    <span>B2B网上交易市场</span>
+                    <span>云计算业务</span>
+                </li>
+                <li>
+                	<span class="glyphicon glyphicon-map-marker"></span>
+                    <span>杭州市</span>
+                    <span class="glyphicon glyphicon-paperclip"></span>
+                    <a>http://www.1688.com</a>
+                </li>
+            </ul>
+        </div>
+        <div class="company_info">
+        	
+           <!-- <button class="pro_buy">
+            
+            认购：XXXX元起
+            
+            </button>-->
+            
+            <button type="button" class="btn btn-primary" id="attention" onclick="change();">点击关注</button>
+        </div>
+       
+        
+       </div>
+       
+       
+       <!--投资人可见-->
+     	<div class="only_investor">
+        	<span>公司的市场规模、业务数据、项目优势、竞品情况、未来规划等信息 仅投资人可见</span>
+          	<button type="button" class="btn btn-primary"><a href="investor_authentication.html">认证投资人</a></button>
+        </div> 
+        
+        <!--公司介绍（文字）-->
+        
+        <div class="company_intro_word">
+        	<h2>公司介绍</h2>
+            <table>
+            	<tr>
+                	<td>
+                        <span class="glyphicon glyphicon-user"></span>
+                    </td>
+                    <td>
+                        <h5>价值观</h5>
+                        <p>客户第一：客户是衣食父母团队合作：共享共担，平凡人做平凡事拥抱变化：迎接变化，勇于创新诚信：诚实正直，言行坦荡激情：乐观向上，永不言弃敬业：专业执着，精益求精</p>
+                    </td>
+                    <td>
+                    	<span class="glyphicon glyphicon-user"></span>
+                    </td>
+                    <td>
+                    	<h5>品牌标示</h5>
+                        <p>阿里巴巴创始人马云觉得世界各地的人士也认识有关“阿里巴巴"的故事，而且大部份语言也存在类似的读音，因而将公司命名为阿里巴巴。电子商务是一门全球化的生意，所以我们也需要一个全球人士也熟悉的名字。阿里巴巴意谓“芝麻开门"，喻意我们的平台为小企业开启财富之门。
+                        </p>
+                    </td>
+                    <td>
+                    	<span class="glyphicon glyphicon-user"></span>
+                    </td>
+                    <td>
+                    	<h5>愿景</h5>
+                        <p>阿里巴巴集团拥有大量市场资料及统计数据，为履行我们对中小企的承诺，我们正努力成为第一家为全部用户免费提供市场数据的企业，希望让他们通过分析数据，掌握市场先机，继而调整策略，扩展业务。我们同时希望成为员工幸福指数最高的企业，并成为一家“活102年”的企业，横跨三个世纪。
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                	<td>
+                    	<span class="glyphicon glyphicon-user"></span>
+                    </td>
+                    <td>
+                    	<h5>价值观</h5>
+                        <p>客户第一：客户是衣食父母团队合作：共享共担，平凡人做平凡事拥抱变化：迎接变化，勇于创新诚信：诚实正直，言行坦荡激情：乐观向上，永不言弃敬业：专业执着，精益求精</p>
+                    </td>
+                    <td>
+                        <span class="glyphicon glyphicon-user"></span>
+                    </td>
+                    <td>
+                        <h5>愿景</h5>
+                        <p>阿里巴巴集团拥有大量市场资料及统计数据，为履行我们对中小企的承诺，我们正努力成为第一家为全部用户免费提供市场数据的企业，希望让他们通过分析数据，掌握市场先机，继而调整策略，扩展业务。我们同时希望成为员工幸福指数最高的企业，并成为一家“活102年”的企业，横跨三个世纪。
+                        </p>
+                    </td>
+                    <td>
+                        <span class="glyphicon glyphicon-user"></span>
+                    </td>
+                    <td>
+                        <h5>品牌标示</h5>
+                        <p>阿里巴巴创始人马云觉得世界各地的人士也认识有关“阿里巴巴"的故事，而且大部份语言也存在类似的读音，因而将公司命名为阿里巴巴。电子商务是一门全球化的生意，所以我们也需要一个全球人士也熟悉的名字。阿里巴巴意谓“芝麻开门"，喻意我们的平台为小企业开启财富之门。
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+         <!--公司介绍（文字）-->
+         
+<!--项目详情开始-->
+		<div class="project_detail">
+        	<!--轮播图片开始-->
+           <div class="all" id='all'>
+        <div class="screen">
+             <ul id="ul">
+              <li ><img src="images/alibaba_zhifubao.jpg" width="500" height="200" /></li>
+              <li><img src="images/alibaba.jpg" width="500" height="200" /></li>
+              <li><img src="images/alibaba_big.jpg" width="500" height="200" /></li>
+              <li><img src="images/alibaba_lou.jpg" width="500" height="200" /></li>
+              <li><img src="images/alibaba_ren.jpg" width="500" height="200" /></li>
+            </ul>
+          </div>
+
+           </div>
+            <!--轮播图片结束-->
+            <!--时间轴开始-->
+            <div class="time_zone">
+            	<div class="time_nav">
+                	<span>项目动态</span>
+               		<span>所有&nbsp;&nbsp;∨</span>
+                </div> 
+               <span class="year">2016</span>
+            	<table>
+                	<tr>
+                    	<td>
+                        	<div>	
+                                <span class="glyphicon glyphicon-record"></span>
+                                <span>2013年5月</span>
+                            </div>
+                        </td>
+                        <td>
+                            <li>阿里巴巴集团发布阿里智能TV操作系统。</li>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td>
+                        	<div>
+                                <span class="glyphicon glyphicon-record"></span>
+                                <span>2013年7月</span>
+                            </div>
+                        </td>
+                        <td>
+                            <li>阿里巴巴集团园区迁往杭州市西溪。</li>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td>
+                        	<div>
+                                <span class="glyphicon glyphicon-record"></span>
+                                <span>2013年8月</span>
+                            </div>
+                        </td>
+                        <td>                        	
+                            <li>阿里巴巴集团正式推出社交网络手机客户端来往。</li>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td>
+                        	<div>
+                                <span class="glyphicon glyphicon-record"></span>
+                                <span>2013年9月</span>
+                            </div>
+                        </td>
+                        <td>
+                            <li>作为天猫平台延伸方案的天猫国际正式推出，让国际品牌直接向中国消费者销售产品。</li>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            </div>
+            <!--时间轴结束-->
+            
+            
+            <!--创始团队开始-->
+            
+            <div class="origi_team">
+            	<h2>创始团队</h2>
+                <ul>
+                	<li>CEO:2003年5月10日，马云创立淘宝网，开始抢夺eBay易趣C2C市场。</li>
+                    <li>CEO:2004年12月，马云创立第三方网上支付平台支付宝。</li>
+                    <li>CEO:2007年11月，马云创立的阿里巴巴网络有限公司在香港联交所主板挂牌上市。</li>
+                </ul>
+                <p>马云   阿里巴巴集团董事局执行主席、阿里巴创始人、创业十八罗汉之一  蔡崇信 阿里巴巴集团董事局执行副主席、创业十八罗汉之一陆兆禧阿里巴巴集团副主席 张勇  阿里巴巴集团首席执行官（CEO） 姜鹏 淘宝网创始人之一、阿里巴巴集团副首席技术彭蕾  蚂蚁金融服务集团董事长兼首席执行官（CEO）、创业十八罗汉之一
+                </p>
+            </div>
+            
+            
+            
+            <!--创始团队结束-->
+        </div>
+
+<!--项目详情结束-->
+    </div>
+
+<!--顶部公司简介结束-->
+
+
+
+<div class="footer">
+
+    <div class="foot-content">
+             <ul class="foot-l">
+             
+                 <li> <span>关于奇彩创投 | 加入我们 | 联系我们 </span><br />意见反馈：<span>www.yeamolo@163.com</span><br />客服电话：<span>1835699061</span>    <br/>
+                 <span>  服务条款 隐私政策</span>  
+                 </li>
+             </ul>
+             
+             <div class="foot-c">
+                 <table>
+                   <td class="huoban">友情链接 </td>
+                 </table>
+                <table>
+                  <tr>
+                     <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                     </tr>
+                    <tr>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   </tr>
+                    <tr>
+                   <td>  <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                 </tr>
+                </table>
+             </div>
+             
+             <div class="foot-r">
+                <div class="saoma">
+               扫码关注微信公众平台
+               </div>
+              </div>
+           </div>
+    <div class="footer-dibu">
+        <span class="bianhao">
+       Copyright © 1968-2016 奇彩创投有限公司 粤ICP备09215446号安备号
+        </span>
+    </div>
+</div>
+<!-- -- --底部结束-- -- -->
+
+</body>
+<script type="text/javascript">
+function animate(obj,target){
+        clearInterval(obj.timer);  // 先清除定时器
+        var speed = obj.offsetLeft < target ? 15 : -15;  
+        obj.timer = setInterval(function() {
+            var result = target - obj.offsetLeft; // 
+            obj.style.left = obj.offsetLeft + speed + "px";
+            if(Math.abs(result)<=15)  
+            {
+                clearInterval(obj.timer);
+                obj.style.left = target + "px"; 
+            }
+        },70)
+    }
+    window.onload = function() {
+        var box = document.getElementById("all"); 
+        var ul = document.getElementById("ul");
+        var ulLis = ul.children;
+        ul.appendChild(ul.children[0].cloneNode(true));
+
+        console.log(ulLis.length);
+        var ol = document.createElement("ol"); 
+        box.appendChild(ol); 
+        for(var i=0;i<ulLis.length-1;i++)
+        {
+            var li = document.createElement("li");
+            li.innerHTML = i + 1;
+            ol.appendChild(li); 
+        }
+        ol.children[0].className = "current";
+        var olLis = ol.children;
+         for(var i=0; i<olLis.length;i++)
+         {
+             olLis[i].index = i;
+             olLis[i].onmouseover = function() {
+                 for(var j=0;j<olLis.length;j++)
+                 {
+                     olLis[j].className = "";  
+                 }
+                 this.className = "current";
+                 animate(ul,-this.index*500)
+                 square = key = this.index; 
+             }
+         }
+        var timer = null;  
+        var key = 0; 
+        var square = 0; 
+          timer = setInterval(autoplay,5000); 
+          function autoplay() {
+              key++;  
+              if(key>ulLis.length - 1)  
+              {
+                  ul.style.left = 0;
+                  key = 1; 
+              }
+              animate(ul,-key*500); 
+              square++;
+              if(square > olLis.length -1)
+              {
+                  square = 0;
+              }
+              for(var i=0;i<olLis.length;i++) 
+              {
+                  olLis[i].className = "";
+              }
+              olLis[square].className = "current";
+          }
+         box.onmouseover = function() {
+             clearInterval(timer);
+         }
+         box.onmouseout = function() {
+             timer = setInterval(autoplay,5000); 
+         }
+    }
+                $("#show_list1").hover(function(){
+                    
+                    $(".nav_list_word1").show();
+                    },function(){
+                            $(".nav_list_word1").hide();
+                        })
+                
+                $(".nav_list_word1").hover(function(){
+                    
+                    $(".nav_list_word1").show();
+                    },function(){
+                            $(".nav_list_word1").hide();
+                        })
+        $("#show_list2").hover(function(){
+                    
+                    $(".nav_list_word2").show();
+                    },function(){
+                            $(".nav_list_word2").hide();
+                        })
+                
+                $(".nav_list_word2").hover(function(){
+                    
+                    $(".nav_list_word2").show();
+                    },function(){
+                            $(".nav_list_word2").hide();
+                        })
+
+    function jump_to(obj){
+        window.location="product_crowd_funding_details.html"
+      }
+
+                        
+        function jump_page_online_finan(){
+            window.location="online_financing.html"
+            }               
+    
+    function change(){
+        var guanzhu=document.getElementById("attention").innerHTML;
+        if(guanzhu=="点击关注"){
+            document.getElementById("attention").innerHTML="已关注";
+        }else{
+            document.getElementById("attention").innerHTML="点击关注";
+        }
+    }
+</script>
+
+</html>
+
+
+
+
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                              

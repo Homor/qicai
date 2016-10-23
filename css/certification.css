@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+.renzheng_warp{ background:#f0f4f7; padding-top:50px;}
+.renzheng{ width:980px; height:600px; background:#Fff;margin: 0px auto; padding-top:20px; padding-left:20px;}
+.renzheng ul{ width:992px; height:36px; border-bottom:1px solid #e2e2e2; padding-left:8px;    margin-left: -20px;
+}
+.renzheng ul li{ float:left; width:96px; height:35px; text-align:center; line-height:36px; border:1px solid #e2e2e2; border-bottom:none; margin-right:12px;}
+.renzheng ul li a{ font-size:14px; color:#555;}
+.renzheng ul li:hover{ border-top:2px solid #ff4200; width:96px; height:35px; background:#fff;}
+.renzheng .rbg{ width:908px; height:48px; background:#fff9d9; line-height:48px; padding-left:50px; border:1px solid #efe8cf;}
+.renzheng .jshi{ width:980px; height:50px; line-height:50px;color:#dc9650; display:block;}
+.renzheng p{ font-size:14px; color:#555; height: 30px;}
+.renzheng p span{ color:#0095d4;}
+.renzheng p .nz{ color:#236b19;}
+.renzheng .text1 { border:1px solid #ccc; color:#999;;text-indent:0.5em;}
+.renzheng .btn{ width:75px; height:28px; background:#f03e00; color:#FFf; text-align:center; line-height:28px; border-radius:8%;margin-left: 98px;margin-bottom: 20px;}

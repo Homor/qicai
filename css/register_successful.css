@@ -1,0 +1,10 @@
+@charset="utf-8";
+.zcsuccessful{width:1000px;margin:30px auto;text-align:center;}
+.zcsuccessful .title_cg{text-align:center;font-size:18px;}
+.zcsuccessful .title_cg h2{margin-bottom:20px;font-size:18px;}
+.zcsuccessful .title_cg p{text-align:center;font-size:16px;}
+.zcsuccessful .shenfen{width:800px;height:300px;text-align:center;color:#4c4c4c;margin:0 auto;}
+.zcsuccessful .shenfen tr{margin-top:16px;font-size:14px;}
+.zcsuccessful .shenfen td{text-align:left;padding-left:50px;}
+.zcsuccessful a{color:#d83800;font-weight:400;}
+.zcsuccessful a:hover{font-weight:500;}

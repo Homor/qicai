@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>账号设置</title>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="jquery/jquery-3.0.0.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/sign_in_after.css" />
+  <link rel="stylesheet" type="text/css" href="css/frame.css">
+
+  <!---- 选项卡样式函数 --  -->
+  <script>
+    function setTab(name,cursel,n){
+      for(i=1;i<=n;i++){
+        var menu=document.getElementById(name+i);
+        var con=document.getElementById("con_"+name+"_"+i);
+        menu.className=i==cursel?"hover":"";
+        menu.className=i==cursel?"show_1":"";
+        con.style.display=i==cursel?"block":"none";
+      }
+    }
+  </script>
+  <script>
+    function setTab1_1(name,cursel,n){
+      for(i=1;i<=n;i++){
+        var menu=document.getElementById(name+i);
+        var con=document.getElementById("con_"+name+"_"+i);
+        menu.className=i==cursel?"hover":"";
+        menu.className=i==cursel?"show_2":"";
+        con.style.display=i==cursel?"block":"none";
+      }
+    }
+  </script>
+  <script>
+    function setTab1_4(name,cursel,n){
+      for(i=1;i<=n;i++){
+        var menu=document.getElementById(name+i);
+        var con=document.getElementById("con_"+name+"_"+i);
+        menu.className=i==cursel?"hover":"";
+        con.style.display=i==cursel?"block":"none";
+      }
+    }
+  </script>
+</head>
+<body>
+
+<!-- -- -- 头部-- -- -->
+<div class="nav_head">
+  
+  <div class="warp">
+      <div class="logo">
+          <a href="index.html"><h1>奇彩创投</h1></a>
+      </div>
+      <div class="container_head">
+          <div class="nav_list_word1" >
+              <ul> 
+                  <li><a href="build_team.html">组建团队</a></li>
+                  <li><a href="find_investor.html">找投资人</a></li>
+                  <li><a href="find_entrepreneurial_teacher.html">创业指导</a></li>
+                   <li><a href="products_crowd_funding_play.html">产品众筹</a></li>
+                  <li><a href="stock_right_financing_display.html">股权众筹</a></li>
+              </ul>
+          </div> 
+
+          <div class="nav_list_word2">
+              <ul>
+                  <li><a href="certification.html">我的认证</a></li>
+                  <li><a href="stock_right_crowd_funding.html">股权融资</a></li>
+                </ul>
+           </div>    
+      </div>
+      
+      <ul class="nav_li">
+             <li><a href="index.html">首页</a></li>
+            <li id="show_list1"><a href="#">创业者</a></li>
+            <li id="show_list2"><a href="#">投资人</a></li>
+            <li><a href="active_community.html">活动社区</a></li>
+            <li><a href="information.html">信息资讯</a></li>
+      </ul>
+       <div class=nvr>
+             <div class="login ">
+              <div class="mypg">
+                <a href="#" id="show_list3" class="mypga">我的账户</a>
+                <div class="nav_list_word3">
+                  <ul>
+                    <li><a href="my_page.html">我的主页</a></li>
+                    <li><a href="account_setting.html">账号设置</a></li>
+                    <li><a href="register_success.html">身份认证</a></li>
+                    <li><a href="index.html">退出</a></li>
+                  </ul>
+                </div>
+              </div>
+              <img src="images/chuangye01.jpg">
+             </div>
+      </div>
+    </div>
+</div>
+<!-- -- -- 头部结束-- -- -->
+
+
+
+
+<!-- ----框架开始---- -->
+<div class="contairt">
+  <div class="aside">
+    <ul class="neikuang">
+      <li><img class="touxiang" src="images/chuangye00.png">
+            <p>罗振宇</p>
+          </li>
+          <li id="one1" onclick="setTab('one',1,7)">
+            <img src="images/guanzhu.png"> &nbsp 我的关注
+          </li> 
+      <li id="one2" onclick="setTab('one',2,7)">
+        <img src="images/dingdan.png"> &nbsp 我的投资
+      </li>
+      <li id="one3" onclick="setTab('one',3,7)">
+        <img src="images/xiaoxi.png"> &nbsp 我的消息
+      </li>
+      <li id="one4" onclick="setTab('one',4,7)">
+          <a name="shoucang"></a>
+        <img src="images/shoucang.png"> &nbsp 我的收藏
+      </li>
+      <li id="one5" onclick="setTab('one',5,7)">
+        <img src="images/gongsi.png"> &nbsp 我的公司
+      </li>
+      <li id="one6" onclick="setTab('one',6,7)" class="show_1">
+        <img src="images/shezhi.png"> &nbsp 账号设置
+      </li>
+      <li id="one7" onclick="setTab('one',7,7)">
+        <img src="images/chanpin.png"> &nbsp 我的产品
+      </li>
+      <li id="one7"><a href="index.html">
+        <img src="images/tuichu.png"> &nbsp 退出登录</a>
+      </li>
+    </ul>
+  </div>
+  <div class="right">
+    <div class="contentbox">
+    <!-- --我的关注-- -->
+      <a name="guanzhu"></a>
+      <div class="neirong1 yincang" id="con_one_1">
+        <div class="choose">
+          <span id="one_1_1" onclick="setTab1_1('one_1_',1,2)" class="show_2">关注的项目
+            <span class="number_1">3</span>
+          </span>
+          <span id="one_1_2" onclick="setTab1_1('one_1_',2,2)">关注的人
+            <span class="number_1">3</span>
+          </span>
+          <hr/>
+        </div>
+        <div class="tbody"> 
+          <div class="content_n"> 
+            <div id="con_one_1__1">
+              <div class="guanzhu">
+                <div class="xiangmu">
+                  <div class="tupian"><img src="images/nc_songzi.jpg"></div>
+                  <div class="name">
+                    <span><a href="financing_project_detail_no_investor.html">长白山天然松子</a></span>|
+                    <span><a href="entrepreneurs_detail.html">小明</a></span>
+                  </div>
+                  <div class="jianjie">
+                    <p>长白山天然松子</p>
+                  </div>
+                  <div class="information">
+                    <span><a href="">公司动态</a></span>
+                 
+                  </div>
+                </div>
+
+               <div class="xiangmu">
+                  <div class="tupian"><img src="images/nc_songzi.jpg"></div>
+                  <div class="name">
+                    <span><a href="financing_project_detail_no_investor.html">长白山天然松子</a></span>|
+                    <span><a href="entrepreneurs_detail.html">小明</a></span>
+                  </div>
+                  <div class="jianjie">
+                    <p>长白山天然松子</p>
+                  </div>
+                  <div class="information">
+                    <span><a href="">公司动态</a></span>
+                 
+                  </div>
+                </div>
+
+                <div class="xiangmu">
+                  <div class="tupian"><img src="images/nc_songzi.jpg"></div>
+                  <div class="name">
+                    <span><a href="financing_project_detail_no_investor.html">长白山天然松子</a></span>|
+                    <span><a href="entrepreneurs_detail.html">小明</a></span>
+                  </div>
+                  <div class="jianjie">
+                    <p>长白山天然松子</p>
+                  </div>
+                  <div class="information">
+                    <span><a href="">公司动态</a></span>
+                 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="con_one_1__2" class="yincang">
+              <div class="guanzhuren">
+                <div class="ren">
+                  <div class="tupian_2"><img src="images/luozhenyu.jpg"></div>
+                  <div class="name_2">
+                    <span><a href="entrepreneurs_detail.html">罗振宇</a></span>
+                  </div>
+                  <div class="jianjie_2">
+                    <p>罗辑思维创始人</p>
+                  </div>
+                  <div class="information_2">
+                    <span> 文化教育 娱乐</span>
+                  </div>
+                </div>
+                
+                 <div class="ren">
+                  <div class="tupian_2"><img src="images/luozhenyu.jpg"></div>
+                  <div class="name_2">
+                    <span><a href="entrepreneurs_detail.html">罗振宇</a></span>
+                  </div>
+                  <div class="jianjie_2">
+                    <p>罗辑思维创始人</p>
+                  </div>
+                  <div class="information_2">
+                    <span> 文化教育 娱乐</span>
+                  </div>
+                </div>
+
+                <div class="ren">
+                  <div class="tupian_2"><img src="images/luozhenyu.jpg"></div>
+                  <div class="name_2">
+                    <span><a href="entrepreneurs_detail.html">罗振宇</a></span>
+                  </div>
+                  <div class="jianjie_2">
+                    <p>罗辑思维创始人</p>
+                  </div>
+                  <div class="information_2">
+                    <span> 文化教育 娱乐</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- --我的关注结束-- -->
+
+    <!-- --我的投资-- -->
+      <div class="neirong2 yincang" id="con_one_2">
+        <div class="choose">
+              <span id="one_2_1" onclick="setTab1_1('one_2_',1,3)" class="show_2">全部</span>
+              <span id="one_2_2" onclick="setTab1_1('one_2_',2,3)">待付款</span>
+              <span id="one_2_3" onclick="setTab1_1('one_2_',3,3)">已付款</span>
+              <hr/>
+            </div>
+            <div class="tbody"> 
+                <div class="content_n"> 
+                  <div id="con_one_2__1">
+                    <div>未发现订单</div>
+                  </div>
+
+                  <div id="con_one_2__2" class="yincang">
+                    <div>未发现待付款订单</div>
+                  </div>
+
+                  <div id="con_one_2__3" class="yincang">
+                    <div>未发现已付款订单</div>
+                  </div>
+              </div>
+            </div>
+      </div>
+    <!-- --我的投资结束-- -->
+
+    <!-- --我的消息--  -->
+      <div class="neirong3 yincang"  id="con_one_3">
+        <div class="choose">
+              <span id="one_3_1" onclick="setTab1_1('one_3_',1,5)" class="show_2">私信</span>
+              <span id="one_3_2" onclick="setTab1_1('one_3_',2,5)">投资消息</span>
+              <span id="one_3_3" onclick="setTab1_1('one_3_',3,5)">融资助手</span>
+              <span id="one_3_4" onclick="setTab1_1('one_3_',4,5)">其他消息</span>
+              <span id="one_3_5" onclick="setTab1_1('one_3_',5,5)">历史消息</span>
+              <hr/>
+            </div>
+            <div class="tbody"> 
+              <div class="content_n"> 
+                <div id="con_one_3__1">
+                  <div>未发现信息</div>
+                </div>
+
+                <div id="con_one_3__2" class="yincang">
+                  <div>未发现投资消息</div>
+                </div>
+
+                <div id="con_one_3__3" class="yincang">
+                  <div>未发现融资消息</div>
+                </div>
+
+                <div id="con_one_3__4" class="yincang">
+                  <div>未发现其他消息</div>
+                </div>
+
+                <div id="con_one_3__5" class="yincang">
+                  <div>未发现历史消息</div>
+                </div>
+              </div>
+            </div>
+      </div>
+
+    <!-- --我的收藏-- -->
+      <div class="neirong4 yincang" id="con_one_4">
+        <div class="choose">
+              <span class="show_2">我的收藏</span>
+              <hr/>
+            </div>
+            <div class="tbody"> 
+                <div class="content_n"> 
+                  <div>
+                    <div>未发现订单</div>
+                  </div>
+              </div>
+            </div>
+      </div>  
+    <!-- --我的收藏结束-- -->
+
+    <!-- --我的公司-- -->
+      <div class="neirong5 yincang" id="con_one_5">
+        <div class="choose">
+              <span id="one_5_1" class="show_2">全部</span>
+              <hr/>
+            </div>
+            <div class="tbody"> 
+                <div class="content_n"> 
+                  <div id="con_one_2__1">
+                    <div>还未创业</div>
+                  </div>
+              </div>
+            </div>
+      </div>
+    <!-- --我的公司结束-- -->
+
+    <!-- --账号设置-- -->
+      <div class="neirong6" id="con_one_6">
+        <div class="choose">
+          <span href="" id="one_6_1" onclick="setTab1_1('one_6_',1,2)" class="show_2">账号信息</span>
+          <span href="" id="one_6_2" onclick="setTab1_1('one_6_',2,2)">社交账号授权</span>
+          <hr/>
+        </div>
+        <div class="tbody"> 
+          <div class="content_n"> 
+            <div id="con_one_6__1">
+              <ul>
+                <li><b>安全邮箱：</b>
+                  <span class="number">www.yeahmolo@163.com</span><button>修改</button>
+                  <p>安全邮箱可以登录奇彩创投账号</p>
+                  <hr/>
+                </li>
+                <li><b>安全手机：</b>
+                  <span class="number">153624585</span><button>修改</button>
+                  <p>安全手机可以登录奇彩创投账号</p>
+                  <hr/>
+                </li>
+                <li><b>账号密码：</b><button>修改</button>
+                  <p>用于保护账号信息和安全登录</p>
+                  <hr/>
+                </li>
+              </ul>
+            </div>
+
+            <div id="con_one_6__2" class="yincang">
+              <ul>
+                <li>
+                  <img src="images/weixinlink.png">
+                  <span>未授权</span>
+                  <span>账号：</span>
+                  <input type="button" value="获取授权" >
+                  <hr/>
+                </li>
+                <li>
+                  <img src="images/weibolink.png">
+                  <span>未授权</span>
+                  <span>账号：</span>
+                  <input type="button"  value="获取授权" >
+                  <hr/>
+                </li>
+                <li>
+                  <img src="images/qqlink.png">
+                  <span>未授权</span>
+                  <span>账号：</span>
+                  <input type="button"  value="获取授权" >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div >
+    <!-- --账号设置结束-- --> 
+
+    <!-- --我的产品开始--  -->
+      <div class="neirong7 yincang" id="con_one_7">
+        <div class="choose">
+              <span id="one_7_1" class="show_2">我的产品</span>
+              <hr/>
+            </div>
+            <div class="tbody"> 
+                <div class="content_n"> 
+                  <div id="con_one_2__1">
+                    <div>未发现产品</div>
+                  </div>
+              </div>
+            </div>
+      </div>
+
+    <!-- --我的产品结束-- -->
+    </div>  
+  </div>
+</div>
+<!-- ----框架结束---- -->
+
+<!-- -- --底部开始-- -- -->
+<div class="footer">
+
+  <div class="foot-content">
+             <ul class="foot-l">
+             
+                 <li> <span>关于奇彩创投 | 加入我们 | 联系我们 </span><br />意见反馈：<span>www.yeamolo@163.com</span><br />客服电话：<span>1835699061</span>    <br/>
+                 <span>  服务条款 隐私政策</span>  
+                 </li>
+             </ul>
+             
+             <div class="foot-c">
+                 <table>
+                   <td class="huoban">友情链接 </td>
+                 </table>
+                <table>
+                  <tr>
+                     <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                     </tr>
+                    <tr>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   </tr>
+                    <tr>
+                   <td>  <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                 </tr>
+                </table>
+             </div>
+             
+             <div class="foot-r">
+              <div class="saoma">
+               扫码关注微信公众平台
+               </div>
+              </div>
+           </div>
+    <div class="footer-dibu">
+        <span class="bianhao">
+       Copyright © 1968-2016 奇彩创投有限公司 粤ICP备09215446号安备号
+        </span>
+    </div>
+</div>
+<!-- -- --底部结束-- -- -->
+
+</body>
+<script type="text/javascript">
+        $("#show_list1").hover(function(){
+          
+          $(".nav_list_word1").show();
+          },function(){
+              $(".nav_list_word1").hide();
+            })
+        
+        $(".nav_list_word1").hover(function(){
+          
+          $(".nav_list_word1").show();
+          },function(){
+              $(".nav_list_word1").hide();
+            })
+    $("#show_list2").hover(function(){
+          
+          $(".nav_list_word2").show();
+          },function(){
+              $(".nav_list_word2").hide();
+            })
+        
+        $(".nav_list_word2").hover(function(){
+          
+          $(".nav_list_word2").show();
+          },function(){
+              $(".nav_list_word2").hide();
+            })
+ $("#show_list3").hover(function(){
+    
+    $(".nav_list_word3").show();
+    },function(){
+        $(".nav_list_word3").hide();
+      })
+  
+  $(".nav_list_word3").hover(function(){
+    
+    $(".nav_list_word3").show();
+    },function(){
+        $(".nav_list_word3").hide();
+      })
+
+    function jump_to(obj){
+        window.location="product_crowd_funding_details.html"
+      }
+
+            
+    function jump_page_online_finan(){
+      window.location="online_financing.html"
+      }       
+    
+</script>
+</html>

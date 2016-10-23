@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+	body{background-color:#E9EAEC;}
+
+	.rolling_picture{position:relative;height:200px;}
+	.rolling_picture div[class^=roll_image]{position:absolute;display:none;}
+	.rolling_picture #show_pic{display:inline;}
+	.navbar-default{background-color:white; margin: 0;}
+	.navbar-default .navbar-nav .active a{color:white;background-color:#008AF5;border-radius:5px 0px 0px 5px;}
+	.thumbnail button{margin:10px 255px;}
+	.thumbnail .glyphicon-time{margin-left:210px;ling-height:30px;}
+	.thumbnail .time_place{background-color:#F3F7FB;padding:7px;}
+	.col-md-12{text-align:center;padding:100px 0px;}
+	.col-md-12 button{width:800px;}
+	
+

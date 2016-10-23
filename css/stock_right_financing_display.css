@@ -1,0 +1,35 @@
+@charset="utf-8";
+.footer{float:left;}
+.content-2 { width:1000px; margin:0 auto; }
+.content-2 .nav-to{ width:1000px; height:50px; border-top:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf; }
+.content-2 .nav-to ul{ width:360px;margin:0 auto; margin-top:12px;}
+.content-2 .nav-to ul li{ width:90px; height:30px; float:left; text-align:center; line-height:30px;}
+.content-2 .nav-to ul li a{ font-size:14px; color:#747474;}
+.content-2 .nav-to ul li:hover{ background:#f03e00;}
+.content-2 .nav-to ul li:hover a{ color:#fff;}
+.content-2 .muzi{float:left; margin:20px 20px;width:280px;}
+.content-2 .muzi img{ float:left;} 
+.content-2 .muzi ul{ width:280px;float:left;border:1px solid #F4F4F4;padding:0px 0px 10px 0px;}
+.content-2 .muzi .li01{ width:280px; height:42px; border:1px solid #f0f0f0; border-left:none;  background:#f4f4f4 url(../images/mayi_88.jpg) no-repeat  20px 8px;  line-height:42px; padding-left:74px;font-weight:bold;}
+.content-2 .muzi .li01 span{ color:#666; font-weight:normal; padding-left:12px;}
+.content-2 .muzi .li02{ width:280px; height:70px;font-weight:bold; padding-top: 12px; line-height:20px; background:url(../images/mayi_07.jpg) no-repeat  12px 12px; padding-left:75px;}
+
+.content-2 .muzi .li02 span{color:#999; font-weight:normal;}
+.content-2 .muzi .li03{color:#999;padding-left:18px; line-height:23px; border-bottom:1px solid #ccc; height:77px; }
+.content-2 .muzi .li03 span{ color:#333;}
+.content-2 .muzi .li04{ color:#f03e00; padding:10px 0 0 18px;}
+.content-2 .muzi .li04 span{ padding-left:40px; line-height:21px;}
+.content-2 .muzi .li04 .s1{ color:#333;}
+.content-2 .muzi .li04 .s2{ color:#999;}
+.content-2 .muzi .li05{ width:256px; height:28px; border:1px solid #ccc; border-radius:3px;text-align: center;
+line-height: 28px; color:#333; margin: 0 0 0 12px;}
+.content-2 .muzi .li06{width:256px; height:28px; border:1px solid #ccc; border-radius:3px;text-align: center;
+line-height: 28px; color:#fff; margin: 0 0 0 18px; background:#178fe6;}
+.content-2 .more{ width:1000px; height:47px;background:#eeeeee; text-align:center; line-height:47px;margin-top: 23px;}
+.content-2 .more a{ font-size:14px; color:#888;}
+.tcdPageCode{margin:20px 20px;text-align:center;width:100%;float:left;}
+.tcdPageCode a{display:inline-block;width:30px;height:30px;border:1px solid gray;margin-left:3px;border-radius:5px;color:gray;line-height:30px;}
+.tcdPageCode .disabled{padding:5px 10px;border:1px solid gray;margin-left:3px;border-radius:5px;color:gray;}
+.current{background-color:red;color:white;padding:5px 10px;border:1px solid gray;margin-left:3px;border-radius:5px;}
+.tcdPageCode .nextPage{padding:5px 10px;width:auto;line-height:20px;}
+.tcdPageCode .prevPage{padding:5px 10px;width:auto;line-height:20px;}

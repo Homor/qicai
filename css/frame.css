@@ -1,0 +1,50 @@
+@charset="utf-8";
+body{background:#efefef;}
+/*侧边导航栏样式*/
+.contairt{width:1050px;margin:50px auto;font-size:16px;}
+.aside{width:200px;float:left;margin-right:50px;background:#fff;padding:20px;margin-bottom:50px;}
+.aside .neikuang{padding:30px;width:140px;text-align:center;}
+.aside .touxiang{width:100px;height:100px;border-radius:50px;}
+.aside p{font-size:20px;margin-top:10px;margin-bottom:20px;font-weight:600;}
+.aside .neikuang li{width:106px;cursor:pointer;text-align:center;font-size:16px;color:#4c4c4c;margin-bottom:10px;margin-top:20px;}
+.aside .neikuang .show_1{background:#efefef;border-bottom:2px solid #f03e00;font-weight:800;font-size:18px;}
+.aside .neikuang li a{color:#4c4c4c;}
+
+/*右侧内容部分样式*/
+	/*通用头部部分*/
+.right{width:800px;float:left;background:#fff;padding:20px;}
+.yincang{display:none;}
+.right .choose{padding-top:20px;}
+.right .choose span{margin-left:10px;margin-right:10px;cursor:pointer;font-weight:500px;font-size:17px;}
+.right .choose .show_2{font-size:18px;font-weight:800;border-bottom:2px solid #f03e00;color:}
+.number_1{display:inline-block;width:16px;height:24px;text-align:center;background:#d83800;border-radius:5px;}
+	/*通用头部结束*/
+
+/*我的关注*/
+	/*关注的项目*/
+.xiangmu{margin-left:24px;color:#4c4c4c;width:220px;height:290px;text-align:center;float:left;border:1px solid rgba(76,76,76,0.09);}
+.xiangmu a{color:#4c4c4c}
+.tupian{width:220px;height:140px;overflow: hidden;}
+.tupian img{width:217px;}
+.name{width:220px;height:30px;text-align:center;font-weight:600;}
+.jianjie{width:220px;height:80px;text-align:center;}
+.information{width:220px;height:40px;text-align:center;}
+	/*关注的人*/
+.ren{margin-left:24px;width:220px;height:290px;text-align:center;float:left;border:1px solid rgba(76,76,76,0.09);}
+.ren a{color:#4c4c4c;}
+.tupian_2{width:220px;height:140px;}
+.tupian_2 img{width:140px;height:140px;border-radius:70px;}
+.name_2{width:220px;height:40px;font-weight:600;text-align:center;}
+.jianjie_2{width:220px;height:80px;}
+.infoemation_2{width:220px;height:30px;}
+
+
+
+
+/*账号设置样式*/
+.tbody li{list-style-type:none;color:#4c4c4c;}
+.tbody .number{color:#f03e00;}
+.tbody .you img{width:38px;border-radius:20px;}
+.tbody .you span{margin-left:20px;}
+.tbody button{color:#fff;float:right;width:70px;height:28px; border:1px solid #e58700;background-color:#f03e00;border-radius:3px;}
+

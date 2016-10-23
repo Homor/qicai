@@ -1,0 +1,48 @@
+	@charset "utf-8";
+	/*新闻图片begin*/
+	h1{width:800px;margin:50px auto;font-size:30px;}
+	.news_pic{width:800px;height:500px;margin:auto;}
+	.news_pic img{width:100%;height:100%;}
+	/*新闻图片end*/
+	/*新闻内容begin*/
+	h4{font-weight:600;color:#4c4c4c;}
+	.news_allwords{width:800px;margin:50px auto;font-size:16px;color:#4c4c4c;}
+	.news_allwords li{margin:20px 0px;}
+	.news_allwords li p{margin:10px 0px;}
+	/*新闻内容end*/
+	
+	/*评论区开始*/
+	
+	.progress_conversation{margin:20px auto;width:100%;background-color:#F4F4F4;padding:40px 50px;}
+	.conversation_list{background-color:white;padding:50px 150px;}
+	.progress_conversation li{margin-top:10px;}
+	.progress_conversation li:nth-child(1){height:20px;}
+	.progress_conversation .conversation_input{width:720px;margin-left:170px;}
+	.progress_conversation .conversation_input li:nth-child(1) span:nth-child(1){float:left;font-family:"方正少儿简体";}
+	.progress_conversation li:nth-child(1) span:nth-child(2){float:right;}
+	.progress_conversation li:nth-child(2) input{width:720px;height:100px;}
+	.progress_conversation li:nth-child(3) input{border-style:none none solid none;border-width:1px;background-color:#F4F4F4;}
+	.progress_conversation li:nth-child(3) span:nth-child(1){float:left;}
+	.progress_conversation li:nth-child(3) span:nth-child(2){float:right;}
+	.progress_conversation li:nth-child(3) a{color:#d83800;}
+	
+	
+	.progress_conversation .conversation_list li{width:720px;height:85px;display:inline-block;border-bottom:dotted 1px #DDD;}
+	.progress_conversation .conversation_list li img{margin:0px;}
+	.progress_conversation .conversation_list li div{float:left;margin:0px;}
+	.progress_conversation .conversation_list li div span{margin-top:3px;display:inline-block;}
+	.progress_conversation .conversation_list .customer div:nth-child(1) span{width:50px;text-align:center;display:inline-block;}
+	.progress_conversation .conversation_list .customer div:nth-child(2){margin:20px 0px 0px 30px;width:550px;}
+	.progress_conversation .conversation_list .customer div:nth-child(2) span:nth-child(1){text-align:center;background-color:#FFF5E1;border-radius:8px;height:25px;padding:0px 10px;line-height:25px;}
+	.progress_conversation .conversation_list .customer div:nth-child(2) span:nth-child(3){text-align:center;font-size:10px;color:#AAA;height:25px;padding:0px 10px;line-height:25px;}
+	.progress_conversation .conversation_list .customer img{margin:0px;}
+	
+	.progress_conversation .conversation_list .seller{text-align:center;}
+	.progress_conversation .conversation_list .seller div:nth-child(2){height:85px;width:70px;}
+    .progress_conversation .conversation_list .seller div:nth-child(1){margin:20px 0px 0px 197px;width:453px;text-align:right;}
+
+    .progress_conversation .conversation_list .seller div:nth-child(1) span:nth-child(1){text-align:center;background-color:#F8F9FB;border-radius:8px;height:25px;padding:0px 10px;line-height:25px;}
+	.progress_conversation .conversation_list .seller div:nth-child(1) span:nth-child(3){text-align:center;font-size:10px;color:#AAA;height:25px;padding:0px 10px;line-height:25px;}
+	
+	
+	/*评论区结束*/

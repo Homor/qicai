@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+
+.teacher_jie{ width:1000px;padding-top: 50px;margin:0 auto;margin-bottom: 50px;overflow: hidden;}
+.teacher_jie .conner{ width:600px; float:left; font-size:14px; color:#333; line-height:24px;}
+.teacher_jie .conner p{ margin-bottom:10px;}
+.teacher_jie .teacher_t{ width:280px;float: right;}
+.teacher_jie .teacher_t span{ display:block; width:280px; height:30px; text-align:center; line-height:30px; color:#333; font-weight:bold;}

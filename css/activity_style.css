@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+.activity{ width:1920px; height:947px; background:url(../images/zujian01.jpg) no-repeat;}
+.activity .nerog{  width: 1000px; margin:0 auto;padding-top: 30px }
+.activity-c{ margin:0 auto;}
+.activity-c tr{ width:510px;}
+.activity-c td{padding-bottom: 12px;}
+.activity-c .text{ font-size:18px; color:#4c4c4c;text-align: right;}
+.activity-c .text1 {  width:400px; height:30px;border:1px solid #bdbdbd; color:#4c4c4c; font-size:16px;text-indent:0.5rem;}
+.activity-c .area { border:1px solid #F90; overflow:auto;  width:99%; height:100px;}
+.activity .huodong{ width:122px; height:40px; background:#f03e00;margin: 20px 0 0 364px; border:none;}
+.activity .huodong a{ font-size:font-size:14px; color:#fff; text-align:center; line-height:40px;}

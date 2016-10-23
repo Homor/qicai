@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>我的主页</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="jquery/jquery-3.0.0.min.js"></script>
+	<title>我的主页</title>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/sign_in_after.css" />
+	<link rel="stylesheet" type="text/css" href="css/my_page.css">
+</head>
+<body>
+
+<!-- -- -- 头部-- -- -->
+<div class="nav_head">
+  
+  <div class="warp">
+      <div class="logo">
+          <a href="index.html"><h1>奇彩创投</h1></a>
+      </div>
+      <div class="container_head">
+          <div class="nav_list_word1" >
+              <ul> 
+                  <li><a href="build_team.html">组建团队</a></li>
+                  <li><a href="find_investor.html">找投资人</a></li>
+                  <li><a href="find_entrepreneurial_teacher.html">创业指导</a></li>
+                   <li><a href="products_crowd_funding_play.html">产品众筹</a></li>
+                  <li><a href="stock_right_financing_display.html">股权众筹</a></li>
+              </ul>
+          </div> 
+
+          <div class="nav_list_word2">
+              <ul>
+                  <li><a href="certification.html">我的认证</a></li>
+                  <li><a href="stock_right_crowd_funding.html">股权融资</a></li>
+                </ul>
+           </div>    
+      </div>
+      
+      <ul class="nav_li">
+             <li><a href="index.html">首页</a></li>
+            <li id="show_list1"><a href="#">创业者</a></li>
+            <li id="show_list2"><a href="#">投资人</a></li>
+           <!--  <li><a href="entrepreneurship_school.html">创业学院</a></li> -->
+            <li><a href="active_community.html">活动社区</a></li>
+            <li><a href="information.html">信息资讯</a></li>
+      </ul>
+       <div class=nvr>
+             <div class="login ">
+              <div class="mypg">
+                <a href="#" id="show_list3" class="mypga">我的账户</a>
+                <div class="nav_list_word3">
+                  <ul>
+                    <li><a href="my_page.html">我的主页</a></li>
+                    <li><a href="account_setting.html">账号设置</a></li>
+                    <li><a href="register_success.html">身份认证</a></li>
+                    <li><a href="index.html">退出</a></li>
+                  </ul>
+                </div>
+              </div>
+              <img src="images/chuangye01.jpg">
+             </div>
+      </div>
+    </div>
+</div>
+<!-- -- -- 头部结束-- -- -->
+
+
+<!-- -- -- 内容开始-- -- -->
+<div class="pagestar">
+	<!-- --个人信息-- -->
+	<div class="masage1" id="masage1" >
+		<div class="touxiang">
+			<img src="images/luozhenyu.jpg">
+		</div>
+
+		<div class="xinxi">
+			<span>罗振宇</span>
+			<button onclick="document.getElementById('masage1').style.display='none';document.getElementById('masage2').style.display='block';">编辑</button>
+            <span>2 </span><a href="">关注</a> |<span>0 </span> <a href="">粉丝</a>&nbsp &nbsp 
+            <a href="">分享</a>
+		</div>
+
+	</div>
+
+	<div class="masage2" id="masage2">
+		<div class="touxiang">
+			<img src="images/luozhenyu.jpg">
+			<button class="sczp">上传照片</button>
+		</div>
+		<div class="xinxi">
+			<div class="namy">
+				<p>
+					<span>真实姓名</span>
+					<input type="text">
+				</p>
+				<p>
+					<span>个人简介</span>
+					<input type="text" placeholder="简单介绍你的经历、个人优势或关注领域">
+				</p>
+				<p>
+					<span>微信账号</span>
+					<input type="text" placeholder="微信号">
+					<input type="checkbox" value="公开">公开
+				</p>
+				<p>
+					<span>Q Q 账号</span>
+					<input type="text" placeholder="QQ号">
+					<input type="checkbox" value="公开">公开
+				</p>
+			</div>
+			<div class="gzhly">
+				<div>
+					<p>关注/擅长领域：</p>
+				</div>
+				<div>
+					<table>
+						<tr>
+							<td><input type="checkbox">电子商务</td>
+							<td><input type="checkbox">社交网络</td>
+							<td><input type="checkbox">智能硬件</td>
+							<td><input type="checkbox">媒体门户</td>
+							<td><input type="checkbox">功能软件</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox">消费生活</td>
+							<td><input type="checkbox">金融</td>
+							<td><input type="checkbox">医疗健康</td>
+							<td><input type="checkbox">企业服务</td>
+							<td><input type="checkbox">旅游户外</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox">房产家居</td>
+							<td><input type="checkbox">数字娱乐</td>
+							<td><input type="checkbox">在线教育</td>
+							<td><input type="checkbox">汽车交通</td>
+							<td><input type="checkbox">移动互联网</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox">O2O</td>
+							<td><input type="checkbox">物流</td>
+							<td><input type="checkbox">其他</td>
+						</tr>
+					</table>	
+				</div>
+				<p class="tishi">至少选择一项近期关注或擅长的领域</p>
+			</div>
+			<div class="btnbcqx">
+				<button class="bcqx bc" onclick="document.getElementById('masage2').style.display='none';document.getElementById('masage1').style.display='block';">保存</button>
+				<button class="bcqx" onclick="document.getElementById('masage2').style.display='none';document.getElementById('masage1').style.display='block';">取消</button>
+			</div>
+		</div>
+	</div>
+	<!-- --个人信息结束-- -->
+
+
+	<div class="leftnr">
+		<!-- --投资案例开始-- -->
+		<div class="investment">
+			<div class="title1">
+				<h3>投资案例</h3> &nbsp <span class="number">0</span>
+			</div>
+
+
+			<div class="addanli" id="TJ_anli">
+				<span class="tianjia" onclick="document.getElementById('TJ_anli').style.display='none';document.getElementById('TJ_anli1').style.display='block';">+ 添加案例</span>
+			</div>
+
+
+			<div class="Atihuan" id="TJ_anli1">
+				<form>
+					<div class="hangdiv">
+						<label><span class="Lspan">公司简称：</span></label>
+						<div class="Rmove">
+							<input type="text" placeholder="如：奇彩创投"/>
+						</div>
+					</div>
+					<div class="hangdiv">
+						<label><span class="Lspan">投资轮次：</span></label>
+						<div class="Rmove">
+							<select>
+								<option value>请选择</option>
+								<option value="0" label="天使轮">天使轮</option>
+								<option value="1" label="Pre-A轮">Pre-A轮</option>
+								<option value="2" label="A轮">A轮</option>
+								<option value="3" label="A+轮">A+轮</option>
+								<option value="4" label="B轮">B轮</option>
+								<option value="5" label="B+轮">B+轮</option>
+								<option value="6" label="C轮">C轮</option>
+								<option value="7" label="D轮">D轮</option>
+								<option value="8" label="E轮及以后">E轮及以后</option>
+							</select>
+						</div>
+					</div>
+					<div class="hangdiv">
+						<label><span class="Lspan">我方投资金额</span></label>
+						<div class="Rmove">
+							<select>
+								<option value="0" label="美元">美元</option>
+								<option value="1" label="人民币">人民币</option>
+							</select>
+							<input type="text" placeholder="500">万
+						</div>
+					</div>
+					<div class="hangdiv">
+						<label><span class="Lspan">此轮总投资金额</span></label>
+						<div class="Rmove">
+							<select>
+								<option value="0" label="美元">美元</option>
+								<option value="1" label="人民币">人民币</option>
+							</select>
+							<input type="text" placeholder="500">万
+						</div>
+					</div>
+					<div class="hangdiv">
+						<label><span class="Lspan">此轮估值</span></label>
+						<div class="Rmove">
+							<select>
+								<option value="0" label="美元">美元</option>
+								<option value="1" label="人民币">人民币</option>
+							</select>
+							<input type="text" placeholder="500">万
+						</div>
+					</div>
+					<div class="hangdiv">
+						<label><span class="Lspan Lspan_1">我代表的投资主体</span></label>
+						<div class="Rmove">
+							<div class="Wxuanze"><input type="radio" name="what">个人 </div>
+							<div class="Wxuanze">
+								<input type="radio" name="what">机构
+								<input type="text" placeholder="请输入机构简称">
+							</div>
+							<div class="Wxuanze">
+								<input type="radio" name="what">公司
+								<input type="text" placeholder="请输入公司简称 如：奇彩创投">
+							</div>
+
+						</div>
+					</div>
+					<div class="hangdiv">
+						<label><span class="Lspan">投资时间</span></label>
+						<div class="Rmove">
+							<select>
+								<option value>年</option>
+								<option value="0" label="2016">2016</option>
+								<option value="1" label="2015">2015</option>
+								<option value="2" label="2014">2014</option>
+								<option value="3" label="2013">2013</option>
+								<option value="4" label="2012">2012</option>
+								<option value="5" label="2011">2011</option>
+								<option value="6" label="2010">2010</option>
+								<option value="7" label="2009">2009</option>
+								<option value="8" label="2008">2008</option>
+								<option value="9" label="2007">2007</option>
+								<option value="10" label="2006">2006</option>
+								<option value="11" label="2005">2005</option>
+								<option value="12" label="2004">2004</option>
+								<option value="13" label="2003">2003</option>
+								<option value="14" label="2002">2002</option>
+								<option value="15" label="2001">2001</option>
+								<option value="16" label="2000">2000</option>
+							</select>
+							<select>
+								<option value>月</option>
+								<option value="0" label="1">1</option>
+								<option value="1" label="2">2</option>
+								<option value="2" label="3">3</option>
+								<option value="3" label="4">4</option>
+								<option value="4" label="5">5</option>
+								<option value="5" label="6">6</option>
+								<option value="6" label="7">7</option>
+								<option value="7" label="8">8</option>
+								<option value="8" label="9">9</option>
+								<option value="9" label="10">10</option>
+								<option value="10" label="11">11</option>
+								<option value="11" label="12">12</option>
+							</select>
+						</div>
+					</div>
+					<div class="btnbcqx">
+						<button class="bcqx bc" onclick="document.getElementById('TJ_anli1').style.display='none';document.getElementById('TJ_anli').style.display='block';">保存</button>
+						<button class="bcqx" onclick="document.getElementById('TJ_anli1').style.display='none';document.getElementById('TJ_anli').style.display='block';">取消</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- --投资案例结束-- -->
+
+		<!-- --创业经历开始-- -->
+		<div class="investment">
+			<div class="title1">
+				<h3>创业经历</h3> &nbsp <span class="number">0</span>
+			</div>
+			<div class="addanli" id="TJ_jingli">
+				<span class="tianjia" onclick="document.getElementById('TJ_jingli').style.display='none';document.getElementById('TJ_jingli1').style.display='block';">+ 添加经历</span>
+			</div>
+			<div class="Ajingli" id="TJ_jingli1">
+				<form>
+					<div class="hangdiv">
+						<label><span class="Lspan">公司简称：</span></label>
+						<div class="Rmove">
+							<input type="text" placeholder="如：奇彩创投"/>
+						</div>
+					</div>
+					<div class="hangdiv">
+						<label><span class="Lspan">职位：</span></label>
+						<div class="Rmove">
+							<select>
+								<option value>请选择</option>
+								<option value="0" label="创始人">创始人</option>
+								<option value="1" label="联合创始人">联合创始人</option>
+							</select>
+							<input type="text" placehoder="如：CEO/市场/产品/技术">
+						</div>
+					</div>
+					<div class="hangdiv">
+						<label><span class="Lspan">任职时间段</span></label>
+						<div class="Rmove">
+							<select>
+								<option value>年</option>
+								<option value="0" label="2016">2016</option>
+								<option value="1" label="2015">2015</option>
+								<option value="2" label="2014">2014</option>
+								<option value="3" label="2013">2013</option>
+								<option value="4" label="2012">2012</option>
+								<option value="5" label="2011">2011</option>
+								<option value="6" label="2010">2010</option>
+								<option value="7" label="2009">2009</option>
+								<option value="8" label="2008">2008</option>
+								<option value="9" label="2007">2007</option>
+								<option value="10" label="2006">2006</option>
+								<option value="11" label="2005">2005</option>
+								<option value="12" label="2004">2004</option>
+								<option value="13" label="2003">2003</option>
+								<option value="14" label="2002">2002</option>
+								<option value="15" label="2001">2001</option>
+								<option value="16" label="2000">2000</option>
+							</select>
+							<select>
+								<option value>月</option>
+								<option value="0" label="1">1</option>
+								<option value="1" label="2">2</option>
+								<option value="2" label="3">3</option>
+								<option value="3" label="4">4</option>
+								<option value="4" label="5">5</option>
+								<option value="5" label="6">6</option>
+								<option value="6" label="7">7</option>
+								<option value="7" label="8">8</option>
+								<option value="8" label="9">9</option>
+								<option value="9" label="10">10</option>
+								<option value="10" label="11">11</option>
+								<option value="11" label="12">12</option>
+							</select>
+						</div>
+					</div>
+					<div class="btnbcqx">
+						<button class="bcqx bc" onclick="document.getElementById('TJ_jingli1').style.display='none';document.getElementById('TJ_jingli').style.display='block';">保存</button>
+						<button class="bcqx" onclick="document.getElementById('TJ_jingli1').style.display='none';document.getElementById('TJ_jingli').style.display='block';">取消</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<!-- --创业经历结束-- -->
+
+		<!-- --工作经历开始-- -->
+		<div class="investment">
+			<div class="title1">
+				<h3>工作经历</h3> &nbsp <span class="number">0</span>
+			</div>
+			<div class="addanli" id="TJ_gjingli">
+				<span class="tianjia" onclick="document.getElementById('TJ_gjingli').style.display='none';document.getElementById('TJ_gjingli1').style.display='block';">+ 添加经历</span>
+			</div>
+			<div >
+				<div class="Bjingli" id="TJ_gjingli1">
+					<form>
+						<div class="hangdiv">
+							<label><span class="Lspan">选择任职公司或机构：</span></label>
+							<div class="Rmove">
+								<input type="radio" checked="checked" name="job" value="公司">公司
+								<input type="radio" name="job" value="投资机构">投资机构
+							</div>
+						</div>
+						<div class="hangdiv">
+							<label><span class="Lspan">公司/投资机构简称：</span></label>
+							<div class="Rmove">
+								<input type="text" placeholder="如：奇彩创投"/>
+							</div>
+						</div>
+						<div class="hangdiv">
+							<label><span class="Lspan">职位：</span></label>
+							<div class="Rmove">
+								<select>
+									<option value>请选择</option>
+									<option value="0" label="技术">技术</option>
+									<option value="1" label="设计">设计</option>
+									<option value="2" label="产品">产品</option>
+									<option value="3" label="运营">运营</option>
+									<option value="4" label="市场与销售">市场与销售</option>
+									<option value="5" label="行政、人事及财务">行政、人事及财务</option>
+									<option value="6" label="投资和并购">投资和并购</option>
+									<option value="7" label="其他">其他</option>
+								</select>
+								<input type="text" placeholder="如：IOS开发/UI设计师">
+							</div>
+						</div>
+						<div class="hangdiv">
+							<label><span class="Lspan Lspan_2">任职时间段：</span></label>
+							<div class="Rmove">
+								<select>
+									<option value>年</option>
+									<option value="0" label="2016">2016</option>
+									<option value="1" label="2015">2015</option>
+									<option value="2" label="2014">2014</option>
+									<option value="3" label="2013">2013</option>
+									<option value="4" label="2012">2012</option>
+									<option value="5" label="2011">2011</option>
+									<option value="6" label="2010">2010</option>
+									<option value="7" label="2009">2009</option>
+									<option value="8" label="2008">2008</option>
+									<option value="9" label="2007">2007</option>
+									<option value="10" label="2006">2006</option>
+									<option value="11" label="2005">2005</option>
+									<option value="12" label="2004">2004</option>
+									<option value="13" label="2003">2003</option>
+									<option value="14" label="2002">2002</option>
+									<option value="15" label="2001">2001</option>
+									<option value="16" label="2000">2000</option>
+								</select>
+								<select>
+									<option value>月</option>
+									<option value="0" label="1">1</option>
+									<option value="1" label="2">2</option>
+									<option value="2" label="3">3</option>
+									<option value="3" label="4">4</option>
+									<option value="4" label="5">5</option>
+									<option value="5" label="6">6</option>
+									<option value="6" label="7">7</option>
+									<option value="7" label="8">8</option>
+									<option value="8" label="9">9</option>
+									<option value="9" label="10">10</option>
+									<option value="10" label="11">11</option>
+									<option value="11" label="12">12</option>
+								</select>
+								<span class="Lspan_3">&nbsp 结束时间应晚于起始时间！</span>
+								<br/><br/>
+								<select>
+									<option value>年</option>
+									<option value="0" label="2016">2016</option>
+									<option value="1" label="2015">2015</option>
+									<option value="2" label="2014">2014</option>
+									<option value="3" label="2013">2013</option>
+									<option value="4" label="2012">2012</option>
+									<option value="5" label="2011">2011</option>
+									<option value="6" label="2010">2010</option>
+									<option value="7" label="2009">2009</option>
+									<option value="8" label="2008">2008</option>
+									<option value="9" label="2007">2007</option>
+									<option value="10" label="2006">2006</option>
+									<option value="11" label="2005">2005</option>
+									<option value="12" label="2004">2004</option>
+									<option value="13" label="2003">2003</option>
+									<option value="14" label="2002">2002</option>
+									<option value="15" label="2001">2001</option>
+									<option value="16" label="2000">2000</option>
+								</select>
+								<select>
+									<option value>月</option>
+									<option value="0" label="1">1</option>
+									<option value="1" label="2">2</option>
+									<option value="2" label="3">3</option>
+									<option value="3" label="4">4</option>
+									<option value="4" label="5">5</option>
+									<option value="5" label="6">6</option>
+									<option value="6" label="7">7</option>
+									<option value="7" label="8">8</option>
+									<option value="8" label="9">9</option>
+									<option value="9" label="10">10</option>
+									<option value="10" label="11">11</option>
+									<option value="11" label="12">12</option>
+								</select>
+							</div>
+						</div>
+						<div class="btnbcqx">
+							<button class="bcqx bc" onclick="document.getElementById('TJ_gjingli1').style.display='none';document.getElementById('TJ_gjingli').style.display='block';">保存</button>
+							<button class="bcqx" onclick="document.getElementById('TJ_gjingli1').style.display='none';document.getElementById('TJ_gjingli').style.display='block';">取消</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- --工作经历结束-- -->	
+	</div>
+
+
+	<!-- --右侧投资项开始-- -->
+	<div class="rightnr">
+		<div class="dbkt1" id="dbkt1">
+			<span>重要信息</span><button  onclick="document.getElementById('dbkt1').style.display='none';document.getElementById('dbkt2').style.display='block'">编辑</button>
+			<p>单笔可投</p>
+		</div>
+		<div class="dbkt2" id="dbkt2">
+			<form>
+				<br/>
+				<p>单笔投资额度<span>(单位：万)</span></p><br/>
+				<p class="hangdiv">个人
+					<input type="text" class="r_money" />至
+					<input type="text" class="r_money" />美元
+				</p>
+				<p class="hangdiv">个人
+					<input type="text" class="r_money" />至
+					<input type="text" class="r_money" />人民币
+				</p>
+				<p class="hangdiv">基金
+					<input type="text" class="r_money" />至
+					<input type="text" class="r_money" />美元
+				</p>
+				<p class="hangdiv">基金
+					<input type="text" class="r_money" />至
+					<input type="text" class="r_money" />人民币
+				</p>
+				<p>主要币种：<br/><br/>
+					<input type="radio" name="money" class="r_money" checked="checked" value="美元" />美元
+					<input type="radio" name="money" class="r_money" value="人民币"/>人民币
+				</p><br/><br/>
+				<p>
+					<table class="lun_t">
+						<tr><td>投资阶段：</td></tr>
+						<tr>
+							<td><input type="checkbox" name="lun" value="天使轮">天使轮</td>
+							<td><input type="checkbox" name="lun" value="Pre-A轮">Pre-A轮</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="lun" value="天使轮">A轮</td>
+							<td><input type="checkbox" name="lun" value="天使轮">B轮</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="lun" value="天使轮">C轮</td>
+							<td><input type="checkbox" name="lun" value="天使轮">D轮</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="lun" value="天使轮">E轮及以后</td>
+						</tr>
+					</table>
+				</p><br/>
+				<p>
+					<span>所在地：</span>
+					<select class="chiose">
+						<option value>请选择</option>
+						<option value="0" label="北京">北京</option>
+						<option value="1" label="上海">上海</option>
+						<option value="2" label="广州">广州</option>
+						<option value="3" label="深圳">深圳</option>
+						<option value="4" label="天津">天津</option>
+						<option value="5" label="海外">海外</option>
+						<option value="6" label="湖南">湖南</option>
+						<option value="7" label="湖北">湖北</option>
+						<option value="8" label="广东">广东</option>
+						<option value="9" label="广西">广西</option>
+						<option value="10" label="河南">河南</option>
+						<option value="11" label="河北">河北</option>
+						<option value="12" label="山东">山东</option>
+						<option value="13" label="山西">山西</option>
+						<option value="14" label="四川">四川</option>
+						<option value="15" label="云南">云南</option>
+						<option value="16" label="贵州">贵州</option>
+						<option value="17" label="台湾">台湾</option>
+						<option value="18" label="新疆">新疆</option>
+						<option value="19" label="西藏">西藏</option>
+						<option value="20" label="安徽">安徽</option>
+					</select>
+				</p><br/>
+				<p>
+					<span>毕业院校</span>
+					<input type="text" class="school" placeholder="请输入学校名称">
+				</p><br/>
+				<div class="btnbcqx">
+					<button class="bcqx bc" onclick="document.getElementById('dbkt2').style.display='none';document.getElementById('dbkt1').style.display='block';">保存</button>
+					<button class="bcqx" onclick="document.getElementById('dbkt2').style.display='none';document.getElementById('dbkt1').style.display='block';">取消</button>
+				</div>
+			</form>
+		</div>
+		<!-- --右侧投资项结束-- -->
+
+
+		<!-- 关注和粉丝开始 -->
+		<div class="gzfs">
+			<div class="title1">
+				<div class="focus1" id="guanzhu" onclick="aaaa();">关注</div>
+				<div class="focus" id="fensi" onclick="bbbb();">粉丝</div>			
+			</div>
+			<div class="guanzhu_d" id="guanzhu_d">
+				<p>
+					<span class="gzcompany wordcolor" onclick="cccc();">公司/</span>
+					<span class="gzpeople" onclick="dddd();">人</span>
+				</p>
+				<div class="gzcompany1" id="gzcompany">关注的公司（缺少图片链接）</div>
+				<div class="gzpeople1" id="gzpeople">关注的人（缺少图片链接）</div>
+			</div>
+			<div class="fensi_d" id="fensi_d">
+				我的粉丝（缺少图片链接）
+			</div>
+		</div>
+	</div>
+</div>
+<!-- -- -- 内容结束 -- -- -->
+
+
+<div class="footer">
+
+	<div class="foot-content">
+             <ul class="foot-l">
+             
+                 <li> <span>关于奇彩创投 | 加入我们 | 联系我们 </span><br />意见反馈：<span>www.yeamolo@163.com</span><br />客服电话：<span>1835699061</span>    <br/>
+                 <span>  服务条款 隐私政策</span>  
+                 </li>
+             </ul>
+             
+             <div class="foot-c">
+                 <table>
+                   <td class="huoban">友情链接 </td>
+                 </table>
+                <table>
+                  <tr>
+                     <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                     </tr>
+                    <tr>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   </tr>
+                    <tr>
+                   <td>  <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                 </tr>
+                </table>
+             </div>
+             
+             <div class="foot-r">
+             	<div class="saoma">
+               扫码关注微信公众平台
+               </div>
+              </div>
+           </div>
+    <div class="footer-dibu">
+        <span class="bianhao">
+       Copyright © 1968-2016 奇彩创投有限公司 粤ICP备09215446号安备号
+        </span>
+    </div>
+</div>
+<!-- -- --底部结束-- -- --
+
+</body>
+	<!-- --关注与粉丝按钮效果-- -->
+	<script type="text/javascript">
+	function aaaa(){
+		document.getElementById('guanzhu').className='focus1';document.getElementById('fensi').className='focus';
+		document.getElementById("guanzhu_d").style.display='block';document.getElementById("fensi_d").style.display='none';
+	}
+	function bbbb(){
+		document.getElementById('guanzhu').className='focus';document.getElementById('fensi').className='focus1';
+		document.getElementById("guanzhu_d").style.display='none';document.getElementById("fensi_d").style.display='block';
+	}
+	</script>
+	<!-- 头部下拉框 -->
+<script type="text/javascript">
+  
+	$("#show_list1").hover(function(){
+					
+					$(".nav_list_word1").show();
+					},function(){
+							$(".nav_list_word1").hide();
+						})
+				
+				$(".nav_list_word1").hover(function(){
+					
+					$(".nav_list_word1").show();
+					},function(){
+							$(".nav_list_word1").hide();
+						})
+		$("#show_list2").hover(function(){
+					
+					$(".nav_list_word2").show();
+					},function(){
+							$(".nav_list_word2").hide();
+						})
+				
+				$(".nav_list_word2").hover(function(){
+					
+					$(".nav_list_word2").show();
+					},function(){
+							$(".nav_list_word2").hide();
+						})
+ $("#show_list3").hover(function(){
+    
+    $(".nav_list_word3").show();
+    },function(){
+        $(".nav_list_word3").hide();
+      })
+  
+  $(".nav_list_word3").hover(function(){
+    
+    $(".nav_list_word3").show();
+    },function(){
+        $(".nav_list_word3").hide();
+      })
+
+</script>
+<!-- 关注中公司与人选中效果 -->
+	<script type="text/javascript">
+	function cccc(){
+		document.getElementById('gzpeople').style.display='none';
+		document.getElementById('gzcompany').style.display='block';
+		$(".gzpeople").removeClass("wordcolor");
+		$(".gzcompany").addClass("wordcolor");
+	}
+	function dddd(){
+		document.getElementById('gzpeople').style.display='block';
+		document.getElementById('gzcompany').style.display='none';
+		$(".gzpeople").addClass("wordcolor");
+		$(".gzcompany").removeClass("wordcolor");
+	}
+	</script>
+
+	<script type="text/javascript">
+	
+	$("#show_list1").hover(function(){
+		
+		$(".nav_list_word1").show();
+		},function(){
+				$(".nav_list_word1").hide();
+			})
+	
+	$(".nav_list_word1").hover(function(){
+		
+		$(".nav_list_word1").show();
+		},function(){
+				$(".nav_list_word1").hide();
+			})
+	$("#show_list2").hover(function(){
+		
+		$(".nav_list_word2").show();
+		},function(){
+				$(".nav_list_word2").hide();
+			})
+	
+	$(".nav_list_word2").hover(function(){
+		
+		$(".nav_list_word2").show();
+		},function(){
+				$(".nav_list_word2").hide();
+			})
+</script>
+
+</html>

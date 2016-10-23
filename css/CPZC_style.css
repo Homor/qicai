@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+.CPZC{ width:1000px; margin:0 auto;}
+.shijian{ margin:30px auto;}
+.shijian tr{ width:510px; position:relative;}
+.shijian td{padding-bottom: 12px;}
+.shijian .text{ font-size:18px; color:#4c4c4c;text-align: right;}
+.shijian .text1 {  width:400px; height:30px;border:1px solid #bdbdbd; color:#4c4c4c;
+	 font-size:16px;text-indent:0.5rem;}
+.file_1{font-size:16px;}
+.tishi{position:relative;}
+.nav_list_word10,.nav_list_word4,.nav_list_word5{font-size:14px;display:none;color:#4c4c4c;z-index:999;width:300px;
+	position:absolute;left:100px;top:-20px;float:left;text-align:left;}
+
+.btn{cursor: pointer;width:120px; height:30px;background:#f03e00;color: #fff;text-align: center;line-height: 30px;
+	margin-left:372px;margin-top: -24px;border-radius: 5%;}
+.text2{  width:288px; height:30px;border:1px solid #bdbdbd; color:#4c4c4c;text-indent:0.5rem;}
+.shijian span{ width:160px;font-size:18px; color:#666; text-align:right;}
+.bgbtn{cursor: pointer;  width:400px; height:30px; background:#f03e00; color:#fff; line-height:30px; text-align:center;
+	border-radius:5px;margin: 30px 0 50px 353px;}

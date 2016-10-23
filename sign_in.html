@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>登录</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>Ant sports</title>
+<script type="text/javascript" src="jquery/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/temp.css" />
+<style type="text/css">
+	.login_bck{background:url(images/sign_in_on.png) 200px 100px no-repeat;width:100%;height:550px;position:relative;}
+	/*@media screen and (max-width:1200px) {
+		.login_bck{background:url(images/sign_in_on.png) 200px 100px no-repeat;width:1200px;height:500px;position:relative;}
+	}*/
+	.login_in{width:375px;height:470px;border:1px solid #E9E9E9;background-color:white;margin:60px 0px 0px 61.8%;float:left;border-radius: 5px;}
+	.login_in .login_in_top{width:373px;height:60px;border-bottom-style:solid;border-width:3px;border-color:#E9E9E9;padding:30px 20px 0px 20px;}
+	.login_in .login_in_top span:nth-child(1){float:left;font-weight:bold;font-size:18px;border-bottom-style:solid;border-color:#d83800;height:50px;margin-top:-20px;padding-top:18px;}
+	.login_in .login_in_top span:nth-child(2){float:right;font-size:12px;margin-top:6px;margin-top:0px;}
+	.login_in .login_in_top span:nth-child(2) a{color:#d83800;}
+	
+	.login_in .login_in_mid {padding-left:20px;margin-top:20px;}
+	.login_in .login_in_mid input {width:325px;height:40px;margin:10px 0px;;border:2px solid #E9E9E9;}
+	.login_in .login_in_mid .button{height:40px;color:white;background:#d83800;width:325px;text-align:center;border:2px solid #d83800;border-radius:5px;cursor:pointer;line-height:36px;}
+	.login_in .login_in_mid form{margin-bottom:20px;}
+	
+	.login_in .login_in_mid a{color:black;margin-top:20px;font-size:12px;}
+	.login_in .login_in_btm {text-align:center;margin-top:35px;background-color:#EAEBEA;height:160px;width:100%;padding:20px;}
+	
+	.login_in .login_in_btm div div{margin-bottom:40px;font-weight:bold;font-size:18px;}
+	.login_in .login_in_btm span{margin:0px 28px;}
+	#check_username{position:absolute;top:130px;left:63.8%;color:red;}
+	
+</style>
+</head>
+
+<body>
+<!-- -- -- 头部-- -- -->
+<div class="nav_head">
+  
+  <div class="warp">
+      <div class="logo">
+          <a href="index.html"><h1>奇彩创投</h1></a>
+      </div>
+      <div class="container_head">
+          <div class="nav_list_word1" >
+              <ul> 
+                  <li><a href="build_team.html">组建团队</a></li>
+                  <li><a href="find_investor.html">找投资人</a></li>
+                  <li><a href="find_entrepreneurial_teacher.html">创业指导</a></li>
+                   <li><a href="products_crowd_funding_play.html">产品众筹</a></li>
+                  <li><a href="stock_right_financing_display.html">股权众筹</a></li>
+              </ul>
+          </div> 
+
+          <div class="nav_list_word2">
+              <ul>
+                  <li><a href="certification.html">我的认证</a></li>
+                  <li><a href="stock_right_crowd_funding.html">股权融资</a></li>
+                </ul>
+           </div>    
+      </div>
+      
+      <ul class="nav_li">
+             <li><a href="index.html">首页</a></li>
+            <li id="show_list1"><a href="#">创业者</a></li>
+            <li id="show_list2"><a href="#">投资人</a></li>
+           <!--  <li><a href="entrepreneurship_school.html">创业学院</a></li> -->
+            <li><a href="active_community.html">活动社区</a></li>
+            <li><a href="information.html">信息资讯</a></li>
+      </ul>
+      <div class=nvr>
+        <div class="login">
+          <a href="sign_in.html">登录</a>
+          <a href="register.html">注册</a>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- -- -- 头部结束-- -- -->
+	<div class="login_bck">
+        <div class="login_in">
+            <div class="login_in_top">
+                <span>账号密码登录</span>
+                <span><a href="register.html">注册新用户</a></span>
+            </div>
+            <div class="login_in_mid">
+                <form action="">
+                <table>
+                	<tr>
+                   	 	<td><input type="text" name="username" placeholder="手机号" onfocus="login_onfocus();" onblur="login_onblur(this)" /><br /></td>
+                        <div id="check_username"></div>
+                    </tr>
+                    <tr>
+                   	 <td>
+                        <input type="password" name="psw_p" class="password" id="psw_p"  placeholder="密码" />
+                      </td>
+                    </tr>
+                </table>
+                    <a href="forget_password.html">忘记登录密码</a>
+                </form>
+                <div class="button" onclick="jump_login()">
+                    立即登录
+                </div>           
+            </div>
+            <div class="login_in_btm">
+            	<div class="inside_div">
+                    <div>社交网络登录</div>
+                    <span><img src="images/7326.tmp.png" onclick="openwin3();" /></span>
+                    <span><img src="images/EFE5.tmp.png" onclick="openwin1();" /></span>
+                    <span><img src="images/70F8.tmp.png" onclick="openwin2();" /></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- -- --底部开始-- -- -->
+
+<div class="footer">
+
+  <div class="foot-content">
+             <ul class="foot-l">
+             
+                 <li> <span>关于奇彩创投 | 加入我们 | 联系我们 </span><br />意见反馈：<span>www.yeamolo@163.com</span><br />客服电话：<span>1835699061</span>    <br/>
+                 <span>  服务条款 隐私政策</span>  
+                 </li>
+             </ul>
+             
+             <div class="foot-c">
+                 <table>
+                   <td class="huoban">友情链接 </td>
+                 </table>
+                <table>
+                  <tr>
+                     <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                     </tr>
+                    <tr>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   </tr>
+                    <tr>
+                   <td>  <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                   <td> <a href="#"> <img src="images/friend.png" /></a></td>
+                 </tr>
+                </table>
+             </div>
+             
+             <div class="foot-r">
+              <div class="saoma">
+               扫码关注微信公众平台
+               </div>
+              </div>
+           </div>
+    <div class="footer-dibu">
+        <span class="bianhao">
+       Copyright © 1968-2016 奇彩创投有限公司 粤ICP备09215446号安备号
+        </span>
+    </div>
+</div>
+<!-- -- --底部结束-- -- -->
+
+</body>
+<script type="text/javascript">
+
+  
+        $("#show_list1").hover(function(){
+          
+          $(".nav_list_word1").show();
+          },function(){
+              $(".nav_list_word1").hide();
+            })
+        
+        $(".nav_list_word1").hover(function(){
+          
+          $(".nav_list_word1").show();
+          },function(){
+              $(".nav_list_word1").hide();
+            })
+    $("#show_list2").hover(function(){
+          
+          $(".nav_list_word2").show();
+          },function(){
+              $(".nav_list_word2").hide();
+            })
+        
+        $(".nav_list_word2").hover(function(){
+          
+          $(".nav_list_word2").show();
+          },function(){
+              $(".nav_list_word2").hide();
+            })
+
+    function jump_to(obj){
+        window.location="product_crowd_funding_details.html"
+      }
+
+            
+    function jump_page_online_finan(){
+      window.location="online_financing.html"
+      }       
+
+function login_onblur(obj){
+		
+		var val=obj.value;
+		var reg_exp_user=/^(1[3|4|5|7|8])\d{9}/gi;
+		
+	
+			if(!reg_exp_user.test(val)){
+				$("#check_username").show();
+				document.getElementById("check_username").innerHTML="<img src='images/red_x.png' />&nbsp;请输入正确的手机号";
+			
+			}else{
+				document.getElementById("check_username").innerHTML="";
+				}
+		
+	}
+function login_onfocus(){
+	$("#check_username").hide();
+
+}
+
+
+	function jump_login(){
+			window.location="sign_in_after.html";
+		}
+
+</script>
+<!-- --社交登录-- -->
+<script LANGUAGE="JavaScript">
+    <!--
+    function openwin1(){
+      window.open ("page1.html", "newwindow", "height=400, width=400, toolbar =no, menubar=no, scrollbars=no, resizable=no, location=no, status=no") 
+    }
+    function openwin2(){
+      window.open ("page2.html", "newwindow", "height=400, width=600, toolbar =no, menubar=no, scrollbars=no, resizable=no, location=no, status=no") 
+    }
+    function openwin3(){
+      window.open ("page3.html", "newwindow", "height=400, width=400, toolbar =no, menubar=no, scrollbars=no, resizable=no, location=no, status=no") 
+    }
+    -->
+  </script>
+</html>
