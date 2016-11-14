@@ -1,8 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-
-
 /******* banner开始 *******/
 .banner{ width:100%; overflow: hidden;}
 .banner img{width:100%}
@@ -108,12 +106,6 @@ a,button{cursor:pointer;}
 .bgt{padding-top:17px;}
 .kj .to{ margin-left:20px;}
 
-/*.cp .more{ width:1000px; height:47px; background:#eeeeee; text-align:center; line-height:47px; float: left;
-margin-top: 23px;}
-.cp .more:hover{ background:#F03E00;}
-.cp .more:hover a{ color:#fff;}
-.cp .more a{ font-size:14px; color:#888;}*/
-/*wy*/
 .w-slider img {
     vertical-align: top;
 }
@@ -179,6 +171,109 @@ margin-top: 23px;}
     right: 0;
     background-position: -6px -44px;
 }
+
+
+.siteCardFLabelBox{
+ background: url(../images/map.jpg) no-repeat;
+    padding-left: 20px;
+    height: 20px;
+    overflow: hidden;
+    margin:5px 0 5px 0;
+}
+.siteCardFLabelBox a:first-child {
+    margin-left: 0px;
+}
+.siteCardFLabelBox a {
+    height: 20px;
+    line-height: 20px;
+    margin-left: 7px;
+    font-size: 11px;
+    color: #999999;
+}
+.siteIlB_box>*, .siteIlB_item {
+    vertical-align: top;
+    font-size: 12px;
+    display: inline-block;
+}
+.site_ALink {
+    text-decoration: none;
+    color: inherit;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+a, .btn {
+    cursor: pointer;
+}
+
+.siteCardFData{
+  position: relative;
+   font: 12px/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   height:46px;
+   text-align:center;
+   width:320px; 
+
+}
+.ftDiv{
+  color:rgb(51,51,51);
+  display:block;
+  position:absolute;
+  left:0px;
+  top:0px;
+  text-align:left;
+}
+.scDiv{
+color:#333;
+display: inline-block;
+text-align:center;
+}
+.siteCardFData .thDiv{
+color:#333;
+display:block;
+position:absolute;
+right:0px;
+top:0px;
+text-align:left;
+}
+.ftP{
+color:rgb(255, 80, 1);
+   font-size: 16px;
+    display:inline;
+    width:20px;
+    font-weight:bold;
+    height:18px;
+    text-align:left;
+}
+.scP{
+   display:block;
+   height:18px;
+   text-align:left;
+}
+
+.siteCardRatio{
+  background-color:rgb(228, 228, 228);
+    display:block;
+    height:6px;
+    width:318px;
+    border-radius: 3px;
+    background-color: #e4e4e4;
+    margin: 10px 0px 7px 0px;
+    overflow: hidden; 
+}
+.siteCardRatioInner{
+  background-color:rgb(80, 171, 242);
+    display:block;
+    height:6px;
+}
+.xl h1{
+  margin:5px 0 5px 0;
+}
+.s0,.s1,.s2{
+  float:left;
+  margin-left:5px;
+}
 /******* 内容1结束 *******/
 
 /******* 内容2开始 *******/
@@ -209,8 +304,7 @@ margin-top: 23px;}
 line-height: 28px; color:#333; margin: 0 0 0 18px;}
 .content-2 .muzi .li06{width:256px; height:28px; border:1px solid #ccc; border-radius:3px;text-align: center;
 line-height: 28px; color:#fff; margin: 0 0 0 18px; background:#178fe6;}
-/*.content-2 .more{ width:1000px; height:47px;background:#eeeeee; text-align:center; line-height:47px;margin-top: 23px;}
-.content-2 .more a{ font-size:14px; color:#888;}*/
+ 
 /******* 内容2（股权众筹专区）结束 *******/
 
 /******* 内容3(招募专区)开始 *******/

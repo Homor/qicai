@@ -78,8 +78,7 @@
 		<div class="xinxi">
 			<span>罗振宇</span>
 			<button onclick="document.getElementById('masage1').style.display='none';document.getElementById('masage2').style.display='block';">编辑</button>
-            <span>2 </span><a href="">关注</a> |<span>0 </span> <a href="">粉丝</a>&nbsp &nbsp 
-            <a href="">分享</a>
+            <span>2 </span><a href="">关注</a>
 		</div>
 
 	</div>
@@ -130,18 +129,6 @@
 							<td><input type="checkbox">企业服务</td>
 							<td><input type="checkbox">旅游户外</td>
 						</tr>
-						<tr>
-							<td><input type="checkbox">房产家居</td>
-							<td><input type="checkbox">数字娱乐</td>
-							<td><input type="checkbox">在线教育</td>
-							<td><input type="checkbox">汽车交通</td>
-							<td><input type="checkbox">移动互联网</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox">O2O</td>
-							<td><input type="checkbox">物流</td>
-							<td><input type="checkbox">其他</td>
-						</tr>
 					</table>	
 				</div>
 				<p class="tishi">至少选择一项近期关注或擅长的领域</p>
@@ -161,8 +148,6 @@
 			<div class="title1">
 				<h3>投资案例</h3> &nbsp <span class="number">0</span>
 			</div>
-
-
 			<div class="addanli" id="TJ_anli">
 				<span class="tianjia" onclick="document.getElementById('TJ_anli').style.display='none';document.getElementById('TJ_anli1').style.display='block';">+ 添加案例</span>
 			</div>
@@ -184,23 +169,11 @@
 								<option value="0" label="天使轮">天使轮</option>
 								<option value="1" label="Pre-A轮">Pre-A轮</option>
 								<option value="2" label="A轮">A轮</option>
-								<option value="3" label="A+轮">A+轮</option>
-								<option value="4" label="B轮">B轮</option>
-								<option value="5" label="B+轮">B+轮</option>
-								<option value="6" label="C轮">C轮</option>
-								<option value="7" label="D轮">D轮</option>
-								<option value="8" label="E轮及以后">E轮及以后</option>
+								<option value="3" label="B轮">B轮</option>
+								<option value="4" label="C轮">C轮</option>
+								<option value="5" label="D轮">D轮</option>
+								<option value="6" label="E轮及以后">E轮及以后</option>
 							</select>
-						</div>
-					</div>
-					<div class="hangdiv">
-						<label><span class="Lspan">我方投资金额</span></label>
-						<div class="Rmove">
-							<select>
-								<option value="0" label="美元">美元</option>
-								<option value="1" label="人民币">人民币</option>
-							</select>
-							<input type="text" placeholder="500">万
 						</div>
 					</div>
 					<div class="hangdiv">
@@ -221,21 +194,6 @@
 								<option value="1" label="人民币">人民币</option>
 							</select>
 							<input type="text" placeholder="500">万
-						</div>
-					</div>
-					<div class="hangdiv">
-						<label><span class="Lspan Lspan_1">我代表的投资主体</span></label>
-						<div class="Rmove">
-							<div class="Wxuanze"><input type="radio" name="what">个人 </div>
-							<div class="Wxuanze">
-								<input type="radio" name="what">机构
-								<input type="text" placeholder="请输入机构简称">
-							</div>
-							<div class="Wxuanze">
-								<input type="radio" name="what">公司
-								<input type="text" placeholder="请输入公司简称 如：奇彩创投">
-							</div>
-
 						</div>
 					</div>
 					<div class="hangdiv">
@@ -498,28 +456,28 @@
 	<!-- --右侧投资项开始-- -->
 	<div class="rightnr">
 		<div class="dbkt1" id="dbkt1">
-			<span>重要信息</span><button  onclick="document.getElementById('dbkt1').style.display='none';document.getElementById('dbkt2').style.display='block'">编辑</button>
+			<span>重要信息</span><button  onclick="
+			document.getElementById('dbkt1').style.display='none';
+			document.getElementById('dbkt2').style.display='block';">编辑</button>
 			<p>单笔可投</p>
+			<div class="info">
+			  <div>单笔投资额度
+					<p>个人<span class="num0">500</span>万元</p>
+					<p>基金<span class="num1">1000</span>万元</p>投资阶段
+			        <span>天使轮</span>投资地域:
+			        <span>北京</span>
+	     	  </div>
+		    </div>
 		</div>
 		<div class="dbkt2" id="dbkt2">
 			<form>
 				<br/>
 				<p>单笔投资额度<span>(单位：万)</span></p><br/>
-				<p class="hangdiv">个人
-					<input type="text" class="r_money" />至
-					<input type="text" class="r_money" />美元
+				<p class="hangdiv">个人&nbsp;&nbsp;
+					<input type="text" class="r_money" />元
 				</p>
-				<p class="hangdiv">个人
-					<input type="text" class="r_money" />至
-					<input type="text" class="r_money" />人民币
-				</p>
-				<p class="hangdiv">基金
-					<input type="text" class="r_money" />至
-					<input type="text" class="r_money" />美元
-				</p>
-				<p class="hangdiv">基金
-					<input type="text" class="r_money" />至
-					<input type="text" class="r_money" />人民币
+				<p class="hangdiv">基金&nbsp;&nbsp;
+					<input type="text" class="r_money" />元
 				</p>
 				<p>主要币种：<br/><br/>
 					<input type="radio" name="money" class="r_money" checked="checked" value="美元" />美元
@@ -546,7 +504,7 @@
 					</table>
 				</p><br/>
 				<p>
-					<span>所在地：</span>
+					<span>投资地域：</span>
 					<select class="chiose">
 						<option value>请选择</option>
 						<option value="0" label="北京">北京</option>
@@ -572,10 +530,6 @@
 						<option value="20" label="安徽">安徽</option>
 					</select>
 				</p><br/>
-				<p>
-					<span>毕业院校</span>
-					<input type="text" class="school" placeholder="请输入学校名称">
-				</p><br/>
 				<div class="btnbcqx">
 					<button class="bcqx bc" onclick="document.getElementById('dbkt2').style.display='none';document.getElementById('dbkt1').style.display='block';">保存</button>
 					<button class="bcqx" onclick="document.getElementById('dbkt2').style.display='none';document.getElementById('dbkt1').style.display='block';">取消</button>
@@ -586,7 +540,7 @@
 
 
 		<!-- 关注和粉丝开始 -->
-		<div class="gzfs">
+		<!-- <div class="gzfs">
 			<div class="title1">
 				<div class="focus1" id="guanzhu" onclick="aaaa();">关注</div>
 				<div class="focus" id="fensi" onclick="bbbb();">粉丝</div>			
@@ -602,7 +556,7 @@
 			<div class="fensi_d" id="fensi_d">
 				我的粉丝（缺少图片链接）
 			</div>
-		</div>
+		</div> -->
 	</div>
 </div>
 <!-- -- -- 内容结束 -- -- -->
